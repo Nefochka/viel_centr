@@ -1,0 +1,60 @@
+.masthead
+  .navbar
+    .container
+      %ul.nav
+        %li
+          =link_to 'Главная', root_url, :class => 'btn btn-primary'
+        %li
+          =link_to 'Услуги', root_url, :class => 'btn btn-primary'
+        %li
+          =link_to 'Галерея', root_url, :class => 'btn btn-primary'
+        %li
+          =link_to 'Запись на прием', root_url, :class => 'btn btn-primary'
+        %li
+          =link_to 'Косметика', root_url, :class => 'btn btn-primary'
+        %li
+          =link_to 'Отзывы', root_url, :class => 'btn btn-primary'
+        %li
+          =link_to 'Контакты', root_url, :class => 'btn btn-primary'
+        %li
+          =link_to 'Подарочные сертификаты', root_url, :class => 'btn btn-primary'
+        %li
+          =link_to 'Бесплатные консультации', root_url, :class => 'btn btn-primary'
+  .navbar
+    .container
+      .span3
+        %ul
+          %li
+            =link_to 'Массаж', root_url, :class => 'btn btn-primary'
+          %li
+            =link_to 'Косметология', root_url, :class => 'btn btn-primary'
+          %li
+            =link_to 'SPA-программы', root_url, :class => 'btn btn-primary'
+          %li
+            =link_to 'Обертывания', root_url, :class => 'btn btn-primary'
+          %li
+            =link_to 'Пиллинги', root_url, :class => 'btn btn-primary'
+      .span3.orange    
+        %h4.page-header
+          Наши контакты:
+        %address
+        %h5.white
+          %strong Адрес:
+          Краснодар, Бульвар Платановый, 4
+          %br
+          %strong <abbr title="Email">e-mail:</abbr>
+          = mail_to 'viel-centr@rambler.ru', 'viel-centr@rambler.ru', {:subject => '"Виэль", центр красоты и здоровья'}
+          %br
+          %strong <abbr title="Телефон">тел.:</abbr> +7 (938) 429-23-28
+          %br
+          %strong <abbr title="Web-адрес">Web-адрес:</abbr>
+          http://www.viel-centr.ru/
+          %br
+  .container{:align => 'center'}
+    = image_tag('01-trans.png',  :class => 'img-rounded', height: "462", width: "678")
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+!!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:property => "og:*", :content => "..."}
+
+    %titleВиэль, центр красоты и здоровья
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %meta{:name => "description", :content => ""}
+    %meta{:name => "author", :content => ""}
+    %meta{:name=>"google-site-verification", :content=>"_gzYyKL1UKQhkHlYNPFfeRw89jJYx89meWwwGKrKCd4"}
+    %meta{:name => "keywords", :content => "ИП Бычик Виолетта Вячеславовна, Виэль, центр красоты и здоровья, массаж, косметология, spa-программы, спа-программы, обертывания, пиллинг, подарочные сертификаты, бесплатные консультации, запись на прием, все виды услуг по косметологии, эстетика тела, антицеллюлитный, детский, спортивный, сколиоз, оздоровительный, остеохондроз"}
+
+    = stylesheet_link_tag 'application', :media => 'all', :"data-turbolinks-eval" => false
+    = javascript_include_tag 'application', :"data-turbolinks-eval" => false
+    = csrf_meta_tags
+    
+
+  %body.background_viel{:class => controller_name}
+    #fb-root
+    .container
+      .masthead
+        %h3.orange
+          = image_tag('logotyp.png',  :class => 'img-rounded', height: "77", width: "113")
+          
+          = link_to '"Виэль", центр красоты и здоровья', root_url, data: {'no-turbolink' => true, :'font-family' => 'font-emblema'}
+ 
+      = yield      
+
+      %footer
+        %hr
+        %p= '&copy; Nefochka 2013'.html_safe
+
