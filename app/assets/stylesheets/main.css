@@ -95,6 +95,7 @@ p.font_viel_centr{
     margin: 0 auto; 
     padding: 0px;
     background-image: url(fon1.jpg);
+    background-color: DarkGreen;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -273,4 +274,27 @@ a:focus {
   background-color: DarkOrange \9;
 }
 
+.nav {
+  margin-bottom: 20px;
+  margin-left: 0;
+  list-style: none;
+}
+
+.nav > li > a {
+  display: block;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.nav > li > a > img {
+  max-width: none;
+}
+
+.nav > .pull-right {
+  float: right;
+}
 
