@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class VielControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
+  test "should get massage" do
+    get :massage
     assert_response :success
   end
 

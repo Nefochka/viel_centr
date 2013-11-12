@@ -1,13 +1,13 @@
 .masthead
   .container{:align => 'right'}
     .span12.offset2
-      %a.button_learn{:href=>"#"} ОБУЧЕНИЕ
+      %a.button_learn{:href=>"massage.html.haml"} ОБУЧЕНИЕ
        
   %br
   .navbar
     .container
-      %ul.nav
-        %li
+      %ul.nav-pills.viel-pills
+        %li.active
           =link_to 'Главная', root_url, :class => 'button_viel'
         %li
           =link_to 'Услуги', root_url, :class => 'button_viel'
@@ -43,7 +43,7 @@
           %br
           %li
             =link_to 'Пиллинги', root_url, :class => 'button_viel_menu'
-      .span3.orange    
+      .span3.orange 
         %h4.page-header
           Наши контакты:
         %address
@@ -58,7 +58,7 @@
           %br
           %strong <abbr title="Web-адрес">Web-адрес:</abbr>
           http://www.viel-centr.ru/
-          %br
+         
   .container{:align => 'center'}
     = image_tag('01-trans.png',  :class => 'img-rounded', height: "462", width: "678")
 

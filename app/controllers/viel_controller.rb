@@ -1,4 +1,4 @@
 class VielController < ApplicationController
-  def index
+  def massage
   end
 end

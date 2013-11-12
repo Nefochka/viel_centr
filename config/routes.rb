@@ -1,4 +1,8 @@
 VielCentr::Application.routes.draw do
+  get "viel/massage"
+  get "viel/cosmetics"
+  get "viel/gallery"
+  get "viel/service"
   get "viel/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

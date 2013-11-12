@@ -16,7 +16,7 @@ body {
   color: white;
 }
 .orange {
-  color: DarkOrange;
+  color: Orange;
 }
 
 /* Custom container */
@@ -288,39 +288,6 @@ a:focus {
           box-shadow: none;
 }
 
-.btn-primary {
-  color: DarkGreen;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: DarkOrange;
-  *background-color: DarkOrange;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
-  background-repeat: repeat-x;
-  border-color: #0044cc #0044cc #002a80;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.btn-primary.disabled,
-.btn-primary[disabled] {
-  color: #ffffff;
-  background-color: DarkOrange;
-  *background-color: #003bb3;
-}
-
-.btn-primary:active,
-.btn-primary.active {
-  background-color: DarkOrange \9;
-}
-
 .nav {
   margin-bottom: 20px;
   margin-left: 0;
@@ -363,7 +330,7 @@ a:focus {
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
-   font-size: 22px;
+   font-size: 20px;
    font-family: font_viel_emblema, font_viel_centr;
    font-style: italic;
    text-decoration: none;
@@ -395,7 +362,7 @@ a:focus {
    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #204506;
+   color: white;
    font-size: 14px;
    font-family: font_viel_emblema, font_viel_centr, Georgia, Serif;
    text-decoration: none;
@@ -443,5 +410,31 @@ a:focus {
    border-top-color: #86a5ba;
    background: #86a5ba;
    }
+
+.nav-pills.viel-pills {
+  *zoom: 1;
+}
+
+.nav-pills.viel-pills:before,
+.nav-pills.viel-pills:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.nav-pills.viel-pills:after {
+  clear: both;
+}
+
+.nav-pills.viel-pills > li {
+  float: left;
+}
+
+.nav-pills.viel-pills > li > a {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
 
 
