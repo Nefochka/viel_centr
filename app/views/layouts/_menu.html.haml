@@ -1,0 +1,27 @@
+.container{:align => 'right'}
+  .span12.offset2
+    %a.button_learn{:href=>""} ОБУЧЕНИЕ  
+%br
+
+.navbar
+  .container
+    %ul.nav-pills.viel-pills
+      %li.active
+        =link_to 'Главная', root_url, :class => 'button_viel'
+      %li
+        =link_to 'Услуги', service_viel_index_path, :class => 'button_viel'
+      %li
+        =link_to 'Галерея', gallery_viel_index_path, :class => 'button_viel'
+      %li
+        =link_to 'Запись на прием', root_url, :class => 'button_viel'
+      %li
+        =link_to 'Косметика', cosmetics_viel_index_path, :class => 'button_viel'
+      %li
+        =link_to 'Отзывы', root_url, :class => 'button_viel'
+      %li
+        =link_to 'Контакты', root_url, :class => 'button_viel'
+      %li
+        =link_to 'Подарочные сертификаты', root_url, :class => 'button_viel'
+      %li
+        =link_to 'Бесплатные консультации', root_url, :class => 'button_viel'
+
