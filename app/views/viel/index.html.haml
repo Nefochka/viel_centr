@@ -1,36 +1,11 @@
 .masthead
-  .container{:align => 'right'}
-    .span12.offset2
-      %a.button_learn{:href=>"massage.html.haml"} ОБУЧЕНИЕ
-       
-  %br
-  .navbar
-    .container
-      %ul.nav-pills.viel-pills
-        %li.active
-          =link_to 'Главная', root_url, :class => 'button_viel'
-        %li
-          =link_to 'Услуги', root_url, :class => 'button_viel'
-        %li
-          =link_to 'Галерея', root_url, :class => 'button_viel'
-        %li
-          =link_to 'Запись на прием', root_url, :class => 'button_viel'
-        %li
-          =link_to 'Косметика', root_url, :class => 'button_viel'
-        %li
-          =link_to 'Отзывы', root_url, :class => 'button_viel'
-        %li
-          =link_to 'Контакты', root_url, :class => 'button_viel'
-        %li
-          =link_to 'Подарочные сертификаты', root_url, :class => 'button_viel'
-        %li
-          =link_to 'Бесплатные консультации', root_url, :class => 'button_viel'
+
   .navbar
     .container
       .span3
         %ul
           %li
-            =link_to 'Массаж', root_url, :class => 'button_viel_menu'
+            =link_to 'Массаж', massage_viel_index_path, :class => 'button_viel_menu'
           %br
           %li
             =link_to 'Косметология', root_url, :class => 'button_viel_menu'
@@ -43,6 +18,7 @@
           %br
           %li
             =link_to 'Пиллинги', root_url, :class => 'button_viel_menu'
+
       .span3.orange 
         %h4.page-header
           Наши контакты:
