@@ -1,4 +1,6 @@
 VielCentr::Application.routes.draw do
+  resources :users
+
   get "viel/massage" => 'viel#massage'
   get "viel/cosmetics"
   get "viel/gallery"
@@ -19,12 +21,19 @@ VielCentr::Application.routes.draw do
   resources :viel, :only => [:index] do
     get :service, :on => :collection
   end
+
+resources :viel, :only => [:index] do
+    get :contacts, :on => :collection
+  end
+
 resources :viel, :only => [:index] do
     get :cosmetics, :on => :collection
   end
 resources :viel, :only => [:index] do
     get :cosmetics, :on => :collection
   end
+
+
   # get "viel/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

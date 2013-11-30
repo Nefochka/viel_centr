@@ -1,17 +1,17 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: lytie_development
+  database: viel_development
   pool: 15
 test:
   adapter: postgresql
   encoding: unicode
-  database: lytie_test
+  database: viel_test
   pool: 5
 production:
   adapter: postgresql
   encoding: unicode
-  database: lytie_production
+  database: viel_production
   pool: 15
-  username: lytie
+  username: viel
   password: 6yFC7HYW6FErhu6JQ

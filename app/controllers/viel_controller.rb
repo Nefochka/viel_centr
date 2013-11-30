@@ -13,4 +13,7 @@ class VielController < ApplicationController
 
   def service
   end
+
+  def contacts
+  end
 end

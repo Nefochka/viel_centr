@@ -21,17 +21,18 @@
     .container
       .masthead
         %h3.orange
-          = image_tag('logotyp.png',  :class => 'img-rounded', height: "77", width: "113")
+          = image_tag('logotyp_black.jpg',  :class => 'img-rounded', height: "77", width: "130")
         
           = link_to '"Виэль", центр красоты и здоровья', root_url, data: {'no-turbolink' => true, :'font-family' => 'font_viel_emblema'}
           .container{:align => 'right'}
 
       .masthead
       = render :partial => 'layouts/menu'
+      = render :partial => 'layouts/side_menu'
 
       = yield      
 
       %footer
         %hr
-        %p= '&copy; Nefochka 2013'.html_safe
+        %p= '&copy; 2013'.html_safe
 

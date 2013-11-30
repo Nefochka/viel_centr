@@ -32,6 +32,14 @@ body {
   margin: 60px 0;
 }
 
+.container_viel {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+ .container_viel2 {
+  margin: 0 auto;
+  max-width: 800px;
+}
 /* Customize the navbar links to be fill the entire space of the .navbar */
 
 
@@ -194,7 +202,7 @@ a:focus {
    background: #f0822d;
    background: -webkit-gradient(linear, left top, left bottom, from(#e67512), to(#f0822d));
    background: -webkit-linear-gradient(top, #e67512, yellow);
-   background: -moz-linear-gradient(top, OrangeRed, orange);
+   background: -moz-linear-gradient(top, Red, orange);
    background: -ms-linear-gradient(top, #e67512, #f0822d);
    background: -o-linear-gradient(top, #e67512, #f0822d);
    *background: transparent url('logotyp_black.jpg') no-repeat scroll top right ;
@@ -229,8 +237,8 @@ a:focus {
    border-top: 1px solid #e8d615;
    background: #f0822d;
    background: -webkit-gradient(linear, left top, left bottom, from(#e67512), to(#f0822d));
-   background: -webkit-linear-gradient(top, #e67512, #f0822d);
-   background: -moz-linear-gradient(top, #e67512, #f0822d);
+   background: -webkit-linear-gradient(top, #e67512, yellow);
+   background: -moz-linear-gradient(top, OrangeRed, orange);
    background: -ms-linear-gradient(top, #e67512, #f0822d);
    background: -o-linear-gradient(top, #e67512, #f0822d);
    padding: 11px 22px;
@@ -263,8 +271,8 @@ a:focus {
    border-top: 1px solid #e8d615;
    background: #f0822d;
    background: -webkit-gradient(linear, left top, left bottom, from(#e67512), to(#f0822d));
-   background: -webkit-linear-gradient(top, #e67512, #f0822d);
-   background: -moz-linear-gradient(top, #e67512, #f0822d);
+   background: -webkit-linear-gradient(top, #e67512, yellow);
+   background: -moz-linear-gradient(top, OrangeRed, orange);
    background: -ms-linear-gradient(top, #e67512, #f0822d);
    background: -o-linear-gradient(top, #e67512, #f0822d);
    padding: 11px 22px;
@@ -333,3 +341,4 @@ h6 {
   color: inherit;
   text-rendering: optimizelegibility;
 }
+
