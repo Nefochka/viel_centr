@@ -1,24 +1,24 @@
 .container_viel{:align => 'left'}
   .span3
     %ul
-      %li
+      %li{:class => set_active_if(:massage, @side_menu_item)}
         =link_to 'Массаж', massage_viel_index_path, :class => 'button_viel_menu'
       %br
-      %li
-        =link_to 'Косметология', root_url, :class => 'button_viel_menu'
+      %li{:class => set_active_if(:cosmetology, @side_menu_item)}
+        =link_to 'Косметология', cosmetology_viel_index_path, :class => 'button_viel_menu'
       %br
-      %li
-        =link_to 'SPA-программы', root_url, :class => 'button_viel_menu'
+      %li{:class => set_active_if(:spa_procedures, @side_menu_item)}
+        =link_to 'SPA-программы', spa_procedures_viel_index_path, :class => 'button_viel_menu'
       %br
-      %li
-        =link_to 'Обертывания', root_url, :class => 'button_viel_menu'
+      %li{:class => set_active_if(:wraps, @side_menu_item)}
+        =link_to 'Обертывания', wraps_viel_index_path, :class => 'button_viel_menu'
       %br
-      %li
-        =link_to 'Пиллинги', root_url, :class => 'button_viel_menu'
+      %li{:class => set_active_if(:peelings, @side_menu_item)}
+        =link_to 'Пиллинги', peelings_viel_index_path, :class => 'button_viel_menu'
       %br
       %br
-      %li
-        %a.button_learn{:href=>""} ОБУЧЕНИЕ
+      %li{:class => set_active_if(:education, @side_menu_item)}
+        =link_to 'ОБУЧЕНИЕ', education_viel_index_path, :class => 'button_learn'
 
 
 

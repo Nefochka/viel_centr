@@ -5,33 +5,38 @@ VielCentr::Application.routes.draw do
   get "viel/cosmetics"
   get "viel/gallery"
   get "viel/service"
+  get "viel/contacts"
+  get "viel/feedback"
+  get "viel/gift_certificate"
+  get "viel/advice"
+  get "viel/appointment"
+  get "viel/home"
+  get "viel/cosmetology"
+  get "viel/spa_procedures"
+  get "viel/wraps"
+  get "viel/peelings"
+  get "viel/education"
+
 
   resources :viel, :only => [:index] do
     get :massage, :on => :collection
-  end
-  
-  resources :viel, :only => [:index] do
-    get :cosmetics, :on => :collection
-  end
+    get :cosmetology, :on => :collection
+    get :spa_procedures, :on => :collection
+    get :wraps, :on => :collection
+    get :peelings, :on => :collection
+    get :education, :on => :collection
 
-  resources :viel, :only => [:index] do
+    get :cosmetics, :on => :collection
     get :gallery, :on => :collection
-  end
-
-  resources :viel, :only => [:index] do
     get :service, :on => :collection
-  end
-
-resources :viel, :only => [:index] do
     get :contacts, :on => :collection
+    get :feedback, :on => :collection
+    get :gift_certificate, :on => :collection
+    get :advice, :on => :collection
+    get :appointment, :on => :collection
+    get :home, :on => :collection
   end
 
-resources :viel, :only => [:index] do
-    get :cosmetics, :on => :collection
-  end
-resources :viel, :only => [:index] do
-    get :cosmetics, :on => :collection
-  end
 
 
   # get "viel/index"

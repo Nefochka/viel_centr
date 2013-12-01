@@ -2,22 +2,22 @@
 .navbar
   .container
     %ul.nav-pills.viel-pills
-      %li.active
-        =link_to 'Главная', root_url, :class => 'button_viel'
-      %li
+      %li{:class => set_active_if(:home, @menu_item)}
+        =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
+      %li{:class => set_active_if(:service, @menu_item)}
         =link_to 'Услуги', service_viel_index_path, :class => 'button_viel'
-      %li
+      %li{:class => set_active_if(:gallery, @menu_item)}
         =link_to 'Галерея', gallery_viel_index_path, :class => 'button_viel'
-      %li
-        =link_to 'Запись на прием', root_url, :class => 'button_viel'
-      %li
+      %li{:class => set_active_if(:appointment, @menu_item)}
+        =link_to 'Запись на прием', appointment_viel_index_path, :class => 'button_viel'
+      %li{:class => set_active_if(:cosmetics, @menu_item)}
         =link_to 'Косметика', cosmetics_viel_index_path, :class => 'button_viel'
-      %li
-        =link_to 'Отзывы', root_url, :class => 'button_viel'
-      %li
+      %li{:class => set_active_if(:feedback, @menu_item)}
+        =link_to 'Отзывы', feedback_viel_index_path, :class => 'button_viel'
+      %li{:class => set_active_if(:contacts, @menu_item)}
         =link_to 'Контакты',  contacts_viel_index_path, :class => 'button_viel'
-      %li
-        =link_to 'Подарочные сертификаты', root_url, :class => 'button_viel'
-      %li
-        =link_to 'Бесплатные консультации', root_url, :class => 'button_viel'
+      %li{:class => set_active_if(:gift_certificate, @menu_item)}
+        =link_to 'Подарочные сертификаты', gift_certificate_viel_index_path, :class => 'button_viel'
+      %li{:class => set_active_if(:advice, @menu_item)}
+        =link_to 'Бесплатные консультации', advice_viel_index_path, :class => 'button_viel'
 
