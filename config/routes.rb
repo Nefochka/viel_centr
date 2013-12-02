@@ -8,6 +8,7 @@ VielCentr::Application.routes.draw do
   get "viel/contacts"
   get "viel/feedback"
   get "viel/gift_certificate"
+  get "viel/program_certificates"
   get "viel/advice"
   get "viel/appointment"
   get "viel/home"
@@ -16,6 +17,8 @@ VielCentr::Application.routes.draw do
   get "viel/wraps"
   get "viel/peelings"
   get "viel/education"
+  get "viel/about_us"
+  get "viel/spa_etiquette"
 
 
   resources :viel, :only => [:index] do
@@ -32,9 +35,12 @@ VielCentr::Application.routes.draw do
     get :contacts, :on => :collection
     get :feedback, :on => :collection
     get :gift_certificate, :on => :collection
+    get :program_certificates, :on => :collection
     get :advice, :on => :collection
     get :appointment, :on => :collection
     get :home, :on => :collection
+    get :about_us, :on => :collection
+    get :spa_etiquette, :on => :collection
   end
 
 

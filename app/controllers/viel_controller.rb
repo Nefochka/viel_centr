@@ -19,6 +19,9 @@ class VielController < ApplicationController
 
   def contacts
   end
+  
+  def about_us
+  end
 
   def cosmetology
   end
@@ -35,9 +38,22 @@ class VielController < ApplicationController
   def education
   end
 
+  def gift_certificate
+  end
+
+  def program_certificates
+  end
+  
+  def spa_etiquette
+  end
+
   private
 
   def find_menu_item
     @menu_item = action_name
+  end
+
+  def find_side_menu_item
+    @side_menu_item = action_name
   end
 end
