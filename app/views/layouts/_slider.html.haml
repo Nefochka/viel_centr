@@ -1,0 +1,17 @@
+.slider_my
+
+:javascript
+  type="text/javascript"
+  src="../jquery.sliders.js"
+
+=link{:rel=>"stylesheet", :type=>"text/css", :href=>"../stylesheets/jquery.sliders.css"}
+
+:text/javascript
+  $(document).ready(function () {
+    $("#slideshow1").sliders({
+        interval: 2000,
+        selector: "#car_slide"
+      });
+  });
+
+
