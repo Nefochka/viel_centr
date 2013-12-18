@@ -13,21 +13,7 @@
 
     = stylesheet_link_tag 'application', :media => 'all', :"data-turbolinks-eval" => false
     = javascript_include_tag 'application', :"data-turbolinks-eval" => false
-    = stylesheet_link_tag 'application', :href=>"../stylesheets/jquery.sliders.css"
     = csrf_meta_tags
-
-    :javascript
-      type="text/javascript"
-      src="../jquery.sliders.js"
-
-    :javascript
-      type="text/javascript"
-      $(document).ready(function () {
-        $("#slideshow1").sliders({
-            interval: 1000,
-            selector: "#car_slide"
-          });
-      });
 
     
 

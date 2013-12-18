@@ -1,24 +1,63 @@
 .masthead
-  .container_viel2.orange{:align => 'center'}
+  .container_viel.orange{:align => 'center'}
     %br
     %br
-    %h2{:'font-family' => 'font-centr'} Наши контакты:
+    %h2{:'font-family' => 'font-centr'} Наши специалисты
   %hr    
-    %address
-    %h5.white
-      .span3.offset2{:'font-family' => 'font-centr', :align => 'left'}
-        %strong Адрес:
-        Краснодар, Бульвар Платановый, 4
-        %br
-        %strong <abbr title="Email">e-mail:</abbr>
-        = mail_to 'viel-centr@rambler.ru', 'viel-centr@rambler.ru', {:subject => '"Виэль", центр красоты и здоровья'}
-        %br
-        %strong <abbr title="Телефон">тел.:</abbr> +7 (938) 429-23-28
-        %br
-        %strong <abbr title="Web-адрес">Web-адрес:</abbr>
-        http://www.viel-centr.ru/
-      %br
-    
+    %h4.italic.white{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
+    %br
+    %br
+    %br
+    %br
+    %br
+  .container_viel{:align => 'center'}
+    .span3
+      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Бычик Виолетта', :title => 'Бычик Виолетта')
+      %p.white Бычик Виолетта Вячеславовна – руководитель центра, преподаватель лечебных техник и SPA методик, «Виртуоз России» V-го Чемпионата SPA массажа 2013г., д/р 17.07.73 (стаж 19лет)
+    .span9
+      #myCarousel{:class=>"carousel slide"}
+        %ol{:class=>"carousel-indicators"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"5"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"6"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"7"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"8"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"9"}
+        .carousel-inner
+          .item.active
+            =image_tag('bychik1.JPG',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('bychik2.JPG',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('bychik3.JPG',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('bychik4.JPG',  :class => 'img-rounded', height: "100", width: "395")
+
+          .item
+            = image_tag('bychik5.JPG',  :class => 'img-rounded', height: "100", width: "208")
+
+          .item
+            = image_tag('bychik6.JPG',  :class => 'img-rounded', height: "100", width: "400")
+
+          .item
+            = image_tag('bychik7.JPG',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('bychik8.JPG',  :class => 'img-rounded', height: "100", width: "400")
+
+          .item
+            = image_tag('bychik9.JPG',  :class => 'img-rounded', height: "100", width: "207")
+
+
+          %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
+          %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
+  
     %br
   %br
 

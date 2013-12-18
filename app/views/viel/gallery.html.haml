@@ -4,16 +4,50 @@
     %br
     %h2{:'font-family' => 'font-centr'} Галерея
   %hr    
-    %h4.italic.white{:'font-family' => 'font-centr', :align => 'right'} "Наверное, нет и не было в мире, начиная с древних и до наших времен, более популярного метода оздоровления, чем массаж".
+    %h4.italic.white{:'font-family' => 'font-centr', :align => 'right'} "Центр красоты и здоровья "Виэль" предлагает Вам: эстетику тела, обертывание (горячее, холодное), антицеллюлитный, криомассаж, детский, логопедический, спортивный массаж, сколиоз, оздоровительный, остеохондроз и т. д."
     %br
     %br
     %br
-    %br
-    %br
-    %br
+
+
   .container_viel{:align => 'center'}
-    #slideshow1{:class=> "sliders"}
-      .slide{:'background-color'=> 'red', :height=> '300px', :width=> '300px'} cabinet1.jpg
-      .slide{:'background-color'=> 'blue', :height=> '300px', :width=> '300px'} cabinet2.jpg
+    #myCarousel{:class=>"carousel slide"}
+      %ol{:class=>"carousel-indicators"}
+        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
+        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
+        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
+        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
+      .carousel-inner
+        .item.active
+          =image_tag('cabinet1.jpg',  :class => 'img-rounded', height: "400", width: "700")
+          .carousel-caption
+            %h4 Кабинет 1
+            %p описание кабинета
+        .item
+          = image_tag('cabinet2.jpg',  :class => 'img-rounded', height: "400", width: "700")
+          .carousel-caption
+            %h4 Кабинет 2
+            %p описание кабинета
+        .item
+          = image_tag('cabinet3.jpg',  :class => 'img-rounded', height: "400", width: "700")
+          .carousel-caption
+            %h4 Кабинет 3
+            %p описание кабинета
+        .item
+          = image_tag('shower.jpg',  :class => 'img-rounded', height: "400", width: "310")
+          .carousel-caption
+            %h4 Душевая
+            %p описание
+
+
+        %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
+        %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
+
+
+
+
+
+
+
 
 
