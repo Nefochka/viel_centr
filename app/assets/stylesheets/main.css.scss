@@ -132,6 +132,13 @@ a:focus {
   text-decoration: underline;
 }
 
+ul_my,
+ol_my {
+  padding: 0;
+  margin: 0 0 10px 25px;
+  list-style-type: none;
+}
+
 .container,
 .navbar-static-top .container,
 .navbar-fixed-top .container,

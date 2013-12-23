@@ -1,7 +1,7 @@
 %br
 .navbar
   .container
-    %ul.nav-pills.viel-pills
+    %ul_my.nav-pills.viel-pills
       %li{:class => set_active_if(:home, @menu_item)}
         =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
       %li{:class => set_active_if(:about_us, @menu_item)}
