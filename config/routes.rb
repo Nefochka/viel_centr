@@ -19,6 +19,11 @@ VielCentr::Application.routes.draw do
   get "viel/education"
   get "viel/about_us"
   get "viel/spa_etiquette"
+  get "viel/bychik"
+  get "viel/chernyakova"
+  get "viel/mbutuka"
+  get "viel/hramcovskaya"
+  get "viel/vasilenko"
 
 
   resources :viel, :only => [:index] do
@@ -41,6 +46,12 @@ VielCentr::Application.routes.draw do
     get :home, :on => :collection
     get :about_us, :on => :collection
     get :spa_etiquette, :on => :collection
+    get :bychik, :on => :collection
+    get :chernyakova, :on => :collection
+    get :mbutuka, :on => :collection
+    get :hramcovskaya, :on => :collection
+    get :vasilenko, :on => :collection
+
   end
 
 

@@ -1,63 +1,61 @@
 .masthead
   .container_viel.orange{:align => 'center'}
     %br
-    %br
     %h2{:'font-family' => 'font-centr'} Наши специалисты
   %hr    
     %h4.italic.white{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
     %br
-    %br
-    %br
-    %br
-    %br
-  .container_viel{:align => 'center'}
+  .container{:align => 'center'}
+    %h3.white Массажисты:
+    %hr
     .span3
       =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Бычик Виолетта', :title => 'Бычик Виолетта')
-      %p.white Бычик Виолетта Вячеславовна – руководитель центра, преподаватель лечебных техник и SPA методик, «Виртуоз России» V-го Чемпионата SPA массажа 2013г., д/р 17.07.73 (стаж 19лет)
     .span9
-      #myCarousel{:class=>"carousel slide"}
-        %ol{:class=>"carousel-indicators"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"5"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"6"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"7"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"8"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"9"}
-        .carousel-inner
-          .item.active
-            =image_tag('bychik1.JPG',  :class => 'img-rounded', height: "100", width: "200")
+      %h4.white.strong Бычик Виолетта Вячеславовна
+      %p.white   руководитель центра, преподаватель лечебных техник и SPA методик, «Виртуоз России» V-го Чемпионата SPA массажа 2013г., дата рождения 17.07.1973, стаж работы 19 лет
+      =link_to "Подробнее...", bychik_viel_index_path
 
-          .item
-            = image_tag('bychik2.JPG',  :class => 'img-rounded', height: "100", width: "390")
+  .container{:align => 'center'}
+    %br
+    %br
+    .span3
+      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Мбутука Роман', :title => 'Мбутука Роман')
+    .span9
+      %h4.white.strong Мбутука Роман Чолавич
+      %p.white   дата рождения 11.07.1985, стаж работы 9 лет
+      =link_to "Подробнее...", mbutuka_viel_index_path
 
-          .item
-            = image_tag('bychik3.JPG',  :class => 'img-rounded', height: "100", width: "390")
+  .container{:align => 'center'}
+    %br
+    %br
+    .span3
+      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Василенко Николай', :title => 'Василенко Николай')
+    .span9
+      %h4.white.strong Василенко Николай Николаевич 
+      %p.white   дата рождения 10.08.1973, стаж работы 6 лет
+      =link_to "Подробнее...", vasilenko_viel_index_path
 
-          .item
-            = image_tag('bychik4.JPG',  :class => 'img-rounded', height: "100", width: "395")
+  .container{:align => 'center'}
+    %h3.white Косметологи:
+    %hr
+    .span3
+      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Чернякова Оксана', :title => 'Чернякова Оксана')
 
-          .item
-            = image_tag('bychik5.JPG',  :class => 'img-rounded', height: "100", width: "208")
+    .span9
+      %h4.white.strong Чернякова Оксана Николаевна
+      %p.white   дата рождения 15.05.1974, стаж работы 4 года
+      =link_to "Подробнее...", chernyakova_viel_index_path
 
-          .item
-            = image_tag('bychik6.JPG',  :class => 'img-rounded', height: "100", width: "400")
-
-          .item
-            = image_tag('bychik7.JPG',  :class => 'img-rounded', height: "100", width: "200")
-
-          .item
-            = image_tag('bychik8.JPG',  :class => 'img-rounded', height: "100", width: "400")
-
-          .item
-            = image_tag('bychik9.JPG',  :class => 'img-rounded', height: "100", width: "207")
-
-
-          %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
-          %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
-  
+  .container{:align => 'center'}
+    %br
+    %br
+    .span3
+      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Храмцовская Капитолина', :title => 'Храмцовская Капитолина')
+    .span9
+      %h4.white.strong Храмцовская Капитолина Евгеньевна
+      %p.white   дата рождения 10.03.1990, стаж работы 4 года 
+      =link_to "Подробнее...", hramcovskaya_viel_index_path
+ 
     %br
   %br
 

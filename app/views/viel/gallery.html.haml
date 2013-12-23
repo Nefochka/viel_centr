@@ -17,11 +17,23 @@
         %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
         %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
         %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
+        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"5"}
+        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"6"}
       .carousel-inner
         .item.active
-          =image_tag('cabinet1.jpg',  :class => 'img-rounded', height: "400", width: "700")
+          =image_tag('viel1.JPG',  :class => 'img-rounded', height: "400", width: "700")
           .carousel-caption
-            %h4 Кабинет 1
+            %h4 Наш коллектив
+            %p описание
+        .item
+          = image_tag('viel2.JPG',  :class => 'img-rounded', height: "400", width: "700")
+          .carousel-caption
+            %h4 Наш коллектив
+            %p описание
+        .item
+          = image_tag('cabinet1.jpg',  :class => 'img-rounded', height: "400", width: "700")
+          .carousel-caption
+            %h4 Кабинет 2
             %p описание кабинета
         .item
           = image_tag('cabinet2.jpg',  :class => 'img-rounded', height: "400", width: "700")

@@ -47,6 +47,21 @@ class VielController < ApplicationController
   def spa_etiquette
   end
 
+  def bychik
+  end
+
+  def chernyakova
+  end
+
+  def mbutuka
+  end
+
+  def hramcovskaya
+  end
+
+  def vasilenko
+  end
+
   private
 
   def find_menu_item
