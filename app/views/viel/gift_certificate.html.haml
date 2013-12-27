@@ -4,6 +4,53 @@
     %br
     %h3{:'font-family' => 'font-centr'} 
       =link_to 'Подарочные сертификаты', gift_certificate_viel_index_path
+
+
+    %br
+      %a{:href=>"#myModal", :role=>"button", :class=>"btn btn-large btn-primary", :'data-toggle'=>"modal", :align => 'right'}Заказать сертификат
+ 
+      <!-- Modal -->
+      #myModal{:class=>"modal hide fade", :tabindex=>"-1", :role=>"dialog", :'aria-labelledby'=>"myModalLabel", :'aria-hidden'=>"true", :method => 'post', :action => 'mailto:nefochka@gmail.ru'}
+        .modal-header
+        .button{:type=>"button", :class=>"close", :'data-dismiss'=>"modal", :'aria-hidden'=>"true"}×
+        %h3 
+          #myModalLabel Заказ подарочного сертификата
+        .modal-body
+          %h8 Минимальная сумма доставляемых сертификатов — от 5000 руб. Доставка бесплатная. Вы всегда можете приобрести подарочный сертификат на меньшую сумму у нас в спа-центре. 
+          %br
+          %br
+  
+          -# блок для имени
+          .control-group
+            %label.control-label-order{:for => 'name', :'font-size' => 'large'} Имя*:
+            .controls
+              %input{:type => 'text', :name => 'name', :placeholder => 'имя', :required => 'Ваше имя'}
+
+          -# блок для телефона
+          .control-group
+            %label.control-label-order{:for => 'phone'} Контактный телефон*:
+            .controls
+              %input{:type => 'text', :name => 'phone', :placeholder => 'контактный телефон', :required => 'Ваш телефон'}
+
+          -# блок для времени звонка
+          .control-group
+            %label.control-label-order{:for => 'time'} В какое время Вам лучше позвонить?
+            .controls
+              %textarea{:type => 'text', :name => 'time', :placeholder => 'время для звонка'}
+
+          -# блок для e-mail
+          .control-group
+            %label.control-label-order-1{:for => 'email'} Введите Ваш e-mail:
+          .controls
+            %input{:type => 'text', :name => 'email', :placeholder => 'e-mail'}
+
+          %h8.italic ВНИМАНИЕ! Поля, помеченные *, обязательны для заполнения
+
+        .modal-footer
+          .button.btn{:'data-dismiss'=>"modal", :'aria-hidden'=>"true"}Close
+          .button.btn.btn-primary{:type => 'submit'} Отправить заказ
+
+
   %hr    
     %h4.italic.white{:'font-family' => 'font-centr', :align => 'right'} Каждый раз в преддверии праздников, дней рождений, юбилеев, корпоративных торжеств Вы задаетесь одним и тем же вопросом: Чтобы такое подарить, чтобы Ваш подарок запомнился, стал действительно дорогим, пришелся по вкусу? Подарите своим друзьям и любимым, родственникам и бизнес партнерам нечто оригинальное: подарите им наслаждение, таинства ритуалов красоты, подарите ощущение физической и духовной гармонии. Поверьте, такой подарок станет особенным и запомнится надолго.
     %br

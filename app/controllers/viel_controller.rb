@@ -62,6 +62,15 @@ class VielController < ApplicationController
   def vasilenko
   end
 
+  def create
+  end
+
+  def new
+  end
+  
+  def home
+  end
+
   private
 
   def find_menu_item

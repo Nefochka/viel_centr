@@ -2,3 +2,52 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+/*addthis_button_facebook_like */
+
+
+.fb {
+  action: like;
+  colorscheme: light;
+  href: http://viel-centr.herokuapp.com/;
+  layout: false;
+  ref: None;
+  send: false;
+  show_faces: false,
+  width: button_count;
+}
+
+.facebook_like_button_holder {
+	position:relative;
+	width:500px;
+	height: 25px;
+	color:#fff;
+	background:black;	
+	}
+	
+.facebook_like_button_holder iframe {
+	position:absolute;
+	top: 0px;
+	width: 500px !important;
+	}
+	
+.fake_facebook_button {
+	pointer-events: none;
+	position:absolute;
+	width: 500px;
+	height: 25px;
+	left:0;
+	top:0;
+	background: url('http://www.esrun.co.uk/blog/wp-content/uploads/2010/11/fake_facebook_button.gif');	
+	}
+
+.fb-like {
+    data-href:'http://viel-centr.herokuapp.com/';
+    data-width: 450px;
+    data-height: 21px;
+    data-colorscheme: light;
+    data-layout: standard;
+    data-action: like;
+    data-show-faces: true;
+    data-send: false;
+}

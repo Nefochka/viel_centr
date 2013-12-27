@@ -25,6 +25,9 @@ VielCentr::Application.routes.draw do
   get "viel/hramcovskaya"
   get "viel/vasilenko"
 
+  resources :orders
+  get "orders/new"
+
 
   resources :viel, :only => [:index] do
     get :massage, :on => :collection
