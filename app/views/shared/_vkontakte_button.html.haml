@@ -1,0 +1,10 @@
+#vk_like
+
+:javascript
+  $(function(){
+    VK.init({
+        apiId: #{VK_APP_ID},
+        onlyWidgets: true
+      });
+    VK.Widgets.Like('vk_like');
+  });

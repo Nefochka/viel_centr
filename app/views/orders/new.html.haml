@@ -1,0 +1,48 @@
+.row-order.white
+  .span13
+    .page-header
+      %h2.orange Заказ подарочного сертификата:
+.row-order.white
+  .span13.offset0
+    %form.form-horizontal{:method => 'post', :action => 'mailto:nefochka@gmail.ru'}
+
+
+      %h4.white Минимальная сумма доставляемых сертификатов — от 5 000 руб. 
+      %h4.whiteДоставка бесплатная. Вы всегда можете приобрести подарочный 
+      %h4.white{:align => 'center'}сертификат на меньшую сумму у нас в спа-центре. 
+      %br
+      %br
+
+      -# блок для имени
+      .control-group
+        %label.control-label-order{:for => 'name', :'font-size' => 'large'} *Имя:
+        .controls
+          %input{:type => 'text', :name => 'name', :placeholder => 'имя', :required => 'Ваше имя'}
+
+      -# блок для телефона
+      .control-group
+        %label.control-label-order{:for => 'phone'} *Контактный телефон:
+        .controls
+          %input{:type => 'text', :name => 'phone', :placeholder => 'контактный телефон', :required => 'Ваш телефон'}
+
+      -# блок для времени звонка
+      .control-group
+        %label.control-label-order{:for => 'time'} В какое время Вам лучше позвонить?
+        .controls
+          %textarea{:type => 'text', :name => 'time', :placeholder => 'время для звонка'}
+
+      -# блок для e-mail
+      .control-group
+        %label.control-label-order-1{:for => 'email'} Введите Ваш e-mail:
+        .controls
+          %input{:type => 'text', :name => 'email', :placeholder => 'e-mail'}
+
+
+      %h8.em.white.italic ВНИМАНИЕ! Поля, помеченные *, обязательны для заполнения
+      .form-actions
+        %button.btn-primary{:type => 'submit', :align => 'center'} Заказать сертификат
+      %br
+      %br
+
+  .container{:align => 'center'}
+    = image_tag('01-trans.png',  :class => 'img-rounded', height: "462", width: "678")
