@@ -21,13 +21,20 @@ body {
 .color-back {
   color: DarkGreen;
 }
+.darkorange {
+  color: darkorange;
+}
 
 .italic {
   font-style: italic;
 }
 
+.OrangeRed {
+  color:OrangeRed;
+}
+
 .strong_my {
-  font-style: strong;
+  font-style: bold;
 }
 
 /* Custom container */
@@ -45,7 +52,7 @@ body {
 }
  .container_viel2 {
   margin: 0 auto;
-  max-width:   00px;
+  max-width:   800px;
 }
 /* Customize the navbar links to be fill the entire space of the .navbar */
 
