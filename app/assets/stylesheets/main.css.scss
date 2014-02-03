@@ -301,7 +301,7 @@ ol_my {
 
 .button_viel:hover {
    border-top-color: #28597a;
-   background: darkgreen;
+   background: orange;
    color: #d6ced6;
 }
 
@@ -336,8 +336,8 @@ ol_my {
 
 .button_viel_menu:hover {
    border-top-color: #28597a;
-   background: #d6ced6;
-   color: darkorange;
+   background: orange;
+   color: #d6ced6;
 }
 
 .button_viel_menu:active {
@@ -386,7 +386,7 @@ h6 {
 }
 
 .nav-pills > .active > a {
-   border-top: 1px solid #e8d615;
+   border-top: 2px solid #e8d615;
    background: #f0822d;
    background: -webkit-gradient(linear, left top, left bottom, from(green), to(#f0822d));
    background: -webkit-linear-gradient(top, green, yellow);
@@ -403,6 +403,29 @@ h6 {
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
    font-size: 14px;
+   font-family: font_viel_emblema, font_viel_centr, Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.viel-pills > .active > a {
+   border-top: 3px solid #e8d615;
+   background: #f0822d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#e67512), to(#f0822d));
+   background: -webkit-linear-gradient(top, #e67512, yellow);
+   background: -moz-linear-gradient(top, OrangeRed, orange);
+   background: -ms-linear-gradient(top, #e67512, #f0822d);
+   background: -o-linear-gradient(top, #e67512, #f0822d);
+   padding: 11px 22px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   border-radius: 9px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 16px;
    font-family: font_viel_emblema, font_viel_centr, Georgia, Serif;
    text-decoration: none;
    vertical-align: middle;
