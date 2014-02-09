@@ -24,5 +24,6 @@ module VielCentr
 
     # config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
     # config.assets.precompile += %w(*.png *.jpg *.otf *.svg *.eot *.woff *.ttf)
+    # config.action_mailer.default_url_options = { host: 'parshukova.elena@gmail.com' }
   end
 end
