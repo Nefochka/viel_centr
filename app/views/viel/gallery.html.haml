@@ -8,56 +8,47 @@
     %br
     %br
     %br
+    %br
+    %br
+ 
+    .accordion{:id=> 'accordion2'}
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseOne"} 
+            %h3.orange Наш коллектив
+        #collapseOne{:class => "accordion-body collapse in"}
+          .accordion-inner
+            =image_tag('viel1.JPG',  :class => 'img-rounded', height: "40", width: "150")
+            = image_tag('viel2.JPG',  :class => 'img-rounded', height: "400", width: "150")
+            = image_tag('cabinet1.jpg',  :class => 'img-rounded', height: "400", width: "150")
+            = image_tag('cabinet2.jpg',  :class => 'img-rounded', height: "400", width: "150")
+            = image_tag('cabinet3.jpg',  :class => 'img-rounded', height: "400", width: "150")
+            = image_tag('shower.jpg',  :class => 'img-rounded', height: "400", width: "66")
 
-
-  .container_viel2{:align => 'center'}
-    #myCarousel{:class=>"carousel slide"}
-      %ol{:class=>"carousel-indicators"}
-        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
-        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
-        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
-        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
-        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"5"}
-        %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"6"}
-      .carousel-inner
-        .item.active
-          =image_tag('viel1.JPG',  :class => 'img-rounded', height: "400", width: "700")
-          .carousel-caption
-            %h4 Наш коллектив
-            %p описание
-        .item
-          = image_tag('viel2.JPG',  :class => 'img-rounded', height: "400", width: "700")
-          .carousel-caption
-            %h4 Наш коллектив
-            %p описание
-        .item
-          = image_tag('cabinet1.jpg',  :class => 'img-rounded', height: "400", width: "700")
-          .carousel-caption
-            %h4 Кабинет 2
-            %p описание кабинета
-        .item
-          = image_tag('cabinet2.jpg',  :class => 'img-rounded', height: "400", width: "700")
-          .carousel-caption
-            %h4 Кабинет 2
-            %p описание кабинета
-        .item
-          = image_tag('cabinet3.jpg',  :class => 'img-rounded', height: "400", width: "700")
-          .carousel-caption
-            %h4 Кабинет 3
-            %p описание кабинета
-        .item
-          = image_tag('shower.jpg',  :class => 'img-rounded', height: "400", width: "310")
-          .carousel-caption
-            %h4 Душевая
-            %p описание
-
-
-        %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
-        %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseTwo"} 
+            %h3.orange Наши специалисты в работе
+        #collapseTwo{:class => "accordion-body collapse"}
+          .accordion-inner
+            =image_tag('our_experts_1.JPG',  :class => 'img-rounded', height: "40", width: "150")
+            = image_tag('our_experts_2.JPG',  :class => 'img-rounded', height: "400", width: "150")
 
 
 
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseThree"} 
+            %h3.orange Другое
+        #collapseThree{:class => "accordion-body collapse"}
+          .accordion-inner
+            =image_tag('viel1.JPG',  :class => 'img-rounded', height: "40", width: "150")
+            = image_tag('viel2.JPG',  :class => 'img-rounded', height: "400", width: "150")
+            = image_tag('cabinet1.jpg',  :class => 'img-rounded', height: "400", width: "150")
+            = image_tag('cabinet2.jpg',  :class => 'img-rounded', height: "400", width: "150")
 
+
+      
 
 
 

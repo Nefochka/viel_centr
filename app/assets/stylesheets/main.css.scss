@@ -778,3 +778,44 @@ table_viel th[class*="span"],
   background-color: red;
   *background-color: #003bb3;
 }
+
+.class_large {
+    text-decoration: none;
+    display: block;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 0 3px 3px 0;
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+.class_large_my_4:hover {
+    -moz-transform: scale(4.2,4.28) translate(15px,-15px);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}
+.class_large_my_2:hover {
+    -moz-transform: scale(2.1,2.14) translate(20px,20px);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative; 
+
+    z-index: 99;
+}
+
+.class_large_my_3:hover {
+    -moz-transform: scale(3.15,3.21) translate(25px,25px);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    bottom: 150px;
+    right: 200px;
+    z-index: 99;
+}

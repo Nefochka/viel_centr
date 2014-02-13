@@ -8,55 +8,29 @@
     %br
     %br
     %br
-    %br
-    %br
+
   .container_viel{:align => 'center'}
-    .span3
-      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Бычик Виолетта', :title => 'Бычик Виолетта')
-      %p.white Бычик Виолетта Вячеславовна – руководитель центра, преподаватель лечебных техник и SPA методик, «Виртуоз России» V-го Чемпионата SPA массажа 2013г., д/р 17.07.73 (стаж 19лет)
-    .span9
-      #myCarousel{:class=>"carousel slide"}
-        %ol{:class=>"carousel-indicators"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"5"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"6"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"7"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"8"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"9"}
-        .carousel-inner
-          .item.active
-            =image_tag('bychik1.gif',  :class => 'img-rounded', height: "100", width: "200")
+    =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Бычик Виолетта', :title => 'Бычик Виолетта')
+    %h3.orange Бычик Виолетта Вячеславовна
+    %h4.white – руководитель центра, преподаватель лечебных техник и SPA методик, «Виртуоз России» V-го Чемпионата SPA массажа 2013г., д/р 17.07.73 
+    %h4.white стаж 19лет
 
-          .item
-            = image_tag('bychik2.JPG',  :class => 'img-rounded', height: "100", width: "390")
-
-          .item
-            = image_tag('bychik3.JPG',  :class => 'img-rounded', height: "100", width: "390")
-
-          .item
-            = image_tag('bychik4.JPG',  :class => 'img-rounded', height: "100", width: "395")
-
-          .item
-            = image_tag('bychik5.JPG',  :class => 'img-rounded', height: "100", width: "208")
-
-          .item
-            = image_tag('bychik6.JPG',  :class => 'img-rounded', height: "100", width: "400")
-
-          .item
-            = image_tag('bychik7.JPG',  :class => 'img-rounded', height: "100", width: "200")
-
-          .item
-            = image_tag('bychik8.JPG',  :class => 'img-rounded', height: "100", width: "400")
-
-          .item
-            = image_tag('bychik9.JPG',  :class => 'img-rounded', height: "100", width: "207")
-
-
-          %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
-          %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
+    .accordion{:id=> 'accordion2'}
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseOne"} 
+            %h3.orange Сертификаты Бычик Виолетты Вячеславовны
+        #collapseOne{:class => "accordion-body collapse in"}
+          .accordion-inner
+            = image_tag('bychik1.gif',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('bychik2.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('bychik3.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('bychik4.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('bychik5.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('bychik6.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('bychik7.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('bychik8.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('bychik9.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
   
     %br
   %br

@@ -9,6 +9,7 @@ gem 'friendly_id', github: "FriendlyId/friendly_id"
 gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
 gem 'will_paginate', '3.0.4'
 gem 'authlogic'
+gem 'mail', '2.5.4'
 # gem 'strong_parameters'
 
 # Use haml

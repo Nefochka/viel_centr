@@ -1,4 +1,6 @@
 VielCentr::Application.routes.draw do
+  resources :gifts
+
   resources :users
 
   get "viel/massage" => 'viel#massage'
