@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default :from => "romka151178@gmail.com"
+  default :from => "parshukova.elena@gmail.com"
   
   def ordered(gift)
     @gift = gift

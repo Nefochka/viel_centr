@@ -22,9 +22,9 @@
   
           -# блок для имени
           .control-group
-            %label.control-label-order{:for => 'name', :'font-size' => 'large'} Имя*:
+            %label.control-label-order{:for => 'gift.name', :'font-size' => 'large'} Имя*:
             .controls
-              %input{:type => 'text', :name => 'name', :placeholder => 'имя', :required => 'Ваше имя'}
+              %input{:type => 'text', :name => 'gift.name', :placeholder => 'имя', :required => 'Ваше имя'}
 
           -# блок для телефона
           .control-group
@@ -40,9 +40,9 @@
 
           -# блок для e-mail
           .control-group
-            %label.control-label-order-1{:for => 'email'} Введите Ваш e-mail:
+            %label.control-label-order-1{:for => 'gift.email'} Введите Ваш e-mail:
             .controls
-              %input{:type => 'text', :name => 'email', :placeholder => 'e-mail'}
+              %input{:type => 'text', :name => 'gift.email', :placeholder => 'e-mail'}
 
           %h8.italic ВНИМАНИЕ! Поля, помеченные *, обязательны для заполнения
 
