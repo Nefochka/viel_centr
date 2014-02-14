@@ -1,0 +1,61 @@
+.head
+  .container   
+    %h3{:'font-family' => 'font-centr'} 
+      =link_to 'Подарочки', gift_certificate_viel_index_path
+
+
+    %br
+      %a{:href=>"#myModal", :role=>"button", :class=>"btn btn-large btn-primary", :'data-toggle'=>"modal", :align => 'right'}Заказать сертификат
+ 
+      <!-- Modal -->
+      #myModal.OrangeRed{:class=>"modal hide fade", :tabindex=>"-1", :role=>"dialog", :'aria-labelledby'=>"myModalLabel", :'aria-hidden'=>"true", :method => 'post', :action => 'mailto:nefirtity@mail.ru'}
+        .modal-header
+          .button{:type=>"button", :class=>"close", :'data-dismiss'=>"modal", :'aria-hidden'=>"true"}×
+        %h3 
+          #myModalLabel Заказ подарочного сертификата
+        .modal-body
+          %h8.italic Минимальная сумма доставляемых сертификатов — от 5000 руб. Доставка бесплатная. Вы всегда можете приобрести подарочный сертификат на меньшую сумму у нас в спа-центре. 
+          %br
+          %br
+          %br
+  
+          -# блок для имени
+          .control-group
+            %label.control-label-order{:for => 'gift.name', :'font-size' => 'large'} Имя*:
+            .controls
+              %input{:type => 'text', :name => 'gift.name', :placeholder => 'имя', :required => 'Ваше имя'}
+
+          -# блок для телефона
+          .control-group
+            %label.control-label-order{:for => 'phone'} Контактный телефон*:
+            .controls
+              %input{:type => 'text', :name => 'phone', :placeholder => 'контактный телефон', :required => 'Ваш телефон'}
+
+          -# блок для времени звонка
+          .control-group
+            %label.control-label-order{:for => 'time'} В какое время Вам лучше позвонить?
+            .controls
+              %textarea{:type => 'text', :name => 'time', :placeholder => 'время для звонка'}
+
+          -# блок для e-mail
+          .control-group
+            %label.control-label-order-1{:for => 'gift.email'} Введите Ваш e-mail:
+            .controls
+              %input{:type => 'text', :name => 'gift.email', :placeholder => 'e-mail'}
+
+          %h8.italic ВНИМАНИЕ! Поля, помеченные *, обязательны для заполнения
+
+        .modal-footer
+          .button.btn{:'data-dismiss'=>"modal", :'aria-hidden'=>"true"}Закрыть
+          .button.btn.btn-primary{:type => 'submit'} Отправить заказ
+
+
+  %hr
+
+
+  .container{:align => 'center'}
+    = image_tag('01-trans.png',  :class => 'img-rounded', height: "462", width: "678")
+    
+
+
+
