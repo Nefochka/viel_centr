@@ -13,6 +13,7 @@ VielCentr::Application.routes.draw do
   get "viel/contacts"
   get "viel/feedback"
   get "viel/gift_certificate"
+  get "viel/gift"
   get "viel/program_certificates"
   get "viel/advice"
   get "viel/appointment"
@@ -48,6 +49,7 @@ VielCentr::Application.routes.draw do
     get :contacts, :on => :collection
     get :feedback, :on => :collection
     get :gift_certificate, :on => :collection
+    get :gift, :on => :collection
     get :program_certificates, :on => :collection
     get :advice, :on => :collection
     get :appointment, :on => :collection
