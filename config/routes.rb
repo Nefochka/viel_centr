@@ -1,6 +1,9 @@
 VielCentr::Application.routes.draw do
   resources :gifts
 
+  resources :simplebox
+  get "simplebox/imgs"
+
   resources :users
 
   get "viel/massage" => 'viel#massage'
