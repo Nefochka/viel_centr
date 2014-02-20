@@ -21,3 +21,12 @@
         =link_to 'Консультации', advice_viel_index_path, :class => 'button_viel'
       %li{:class => set_active_if(:spa_etiquette, @menu_item)}
         =link_to 'SPA-этикет', spa_etiquette_viel_index_path, :class => 'button_viel'
+
+      - if current_user
+        %li
+          = link_to 'Выход', logout_path, :method => :delete, :class => 'button'
+
+      - if !current_user
+        %li
+          = link_to 'Вход', login_path, :class => 'button'
+

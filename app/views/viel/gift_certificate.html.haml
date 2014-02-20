@@ -5,12 +5,16 @@
     %h3{:'font-family' => 'font-centr'} 
       =link_to 'Подарочные сертификаты', gift_certificate_viel_index_path
 
+    %br
+      %a{:href=>"#viel-modal", :role=>"button", :class=>"btn btn-large btn-primary", :'data-toggle'=>"modal", :align => 'right'} Заказать сертификат
+      = render :partial => 'dialogs/gift_certificate'
+
 
     %br
       %a{:href=>"#myModal", :role=>"button", :class=>"btn btn-large btn-primary", :'data-toggle'=>"modal", :align => 'right'}Заказать сертификат
  
       <!-- Modal -->
-      #myModal.OrangeRed{:class=>"modal hide fade", :tabindex=>"-1", :role=>"dialog", :'aria-labelledby'=>"myModalLabel", :'aria-hidden'=>"true", :method => 'post', :action => 'mailto: parshukova.elena@gmail.com'}
+      #myModal.OrangeRed{:class=>"modal hide fade", :tabindex=>"-1", :role=>"dialog", :'aria-labelledby'=>"myModalLabel", :'aria-hidden'=>"true", :method => 'post', :action => 'http://www.proforientator.ru/tests'}
         .modal-header
           .button{:type=>"button", :class=>"close", :'data-dismiss'=>"modal", :'aria-hidden'=>"true"}×
         %h3 
@@ -49,6 +53,7 @@
         .modal-footer
           .button.btn{:'data-dismiss'=>"modal", :'aria-hidden'=>"true"}Закрыть
           .button.btn.btn-primary{:'data-dismiss'=>"modal", :'aria-hidden'=>"true"}Отправить заказ
+          =link_to 'Подарочки', gift_viel_index_path, :class => 'button.btn.btn-primary'
 
 
   %hr

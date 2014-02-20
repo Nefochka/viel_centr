@@ -12,6 +12,10 @@ gem 'authlogic'
 gem 'mail', '2.5.4'
 # gem 'strong_parameters'
 
+group :development, :test do
+  gem 'annotate'
+end
+
 # Use haml
 gem 'haml'
 gem 'jquery-rails'

@@ -1,0 +1,30 @@
+= form_for @user, :url => users_path, :html => {:class => 'form-vertical well'} do |f|
+  %h2 РЕГИСТРАЦИЯ
+  %hr
+  .control-group
+    .controls
+      = f.text_field :nickname, :placeholder => 'Логин', :class => 'input-large'
+  .control-group
+    .controls
+      = f.text_field :first_name, :placeholder => 'Имя', :class => 'input-large'
+      = f.text_field :last_name, :placeholder => 'Фамилия', :class => 'input-large'
+
+  .control-group
+    .controls
+      = f.email_field :email, :placeholder => 'Email', :class => 'input-large'
+
+  .control-group
+    .controls
+      = f.password_field :password, :placeholder => 'Пароль', :class => 'input-large'
+      = f.password_field :password_confirmation, :placeholder => 'Подтверждение пароля', :class => 'input-large'
+
+  - if flash[:notice].present? || @user.errors.present?
+    .error_block
+      %strong= flash[:notice] || @user.errors.full_messages.first
+
+  %br
+  = f.submit 'Зарегистрироваться', :class => 'btn btn-primary', :data => {:submit => true}
+
+%p
+  Уже зарегистрированы?
+  = link_to 'Войти', login_path

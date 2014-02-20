@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Виэль, центр красоты и здоровья
+    = stylesheet_link_tag 'application', :media => 'all', :"data-turbolinks-eval" => false
+    = javascript_include_tag 'application', :"data-turbolinks-eval" => false
+    = csrf_meta_tags
+
+  %body.login
+
+    .container
+      = yield

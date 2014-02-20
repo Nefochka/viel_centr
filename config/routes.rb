@@ -1,8 +1,13 @@
 VielCentr::Application.routes.draw do
-  resources :gifts
+
+  get 'login' => 'user_sessions#new'
+  post 'login' => 'user_sessions#create'
+  delete 'logout' => 'user_sessions#destroy'
+  get 'signup' => 'users#new'
+
+  resources :gift_certificates
 
   resources :simplebox
-
 
   resources :users
 
@@ -71,7 +76,7 @@ VielCentr::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
- root 'viel#index'
+ root 'viel#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

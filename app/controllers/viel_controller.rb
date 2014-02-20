@@ -1,4 +1,7 @@
 class VielController < ApplicationController
+
+  skip_before_action :require_user
+
   before_action :find_menu_item
 
   def index
@@ -80,4 +83,9 @@ class VielController < ApplicationController
   def find_side_menu_item
     @side_menu_item = action_name
   end
+
+  def find_gift_certificate_item
+    @gift_certificate_item = action_name
+  end
+
 end

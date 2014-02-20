@@ -1,0 +1,15 @@
+= form_for @user_session, :url => login_path, :html => {:class => 'form-vertical well'} do |f|
+  %h2 ВХОД
+  = f.email_field :email, :placeholder => 'Email', :class => 'input-large'
+  = f.password_field :password, :placeholder => 'Пароль', :class => 'input-large'
+  
+  - if flash[:notice].present? || @user_session.errors.present?
+    .error_block
+      %strong= flash[:notice] || @user_session.errors.full_messages.first  
+
+  %br
+  = f.submit 'ВОЙТИ', :class => 'btn btn-primary', :data => {:submit => true}
+
+%p
+  Вы не зарегистрированы?
+  = link_to 'Регистрация', signup_path

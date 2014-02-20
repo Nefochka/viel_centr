@@ -1,78 +1,27 @@
-class GiftsController < ApplicationController
-  before_action :set_gift, only: [:show, :edit, :update, :destroy]
+class GiftCertificatesController < ApplicationController
 
-  # GET /gifts
-  # GET /gifts.json
-  def index
-    @gifts = Gift.all
-  end
-
-  # GET /gifts/1
-  # GET /gifts/1.json
-  def show
-  end
-
-  # GET /gifts/new
+      
   def new
-    @gift = Gift.new
+    @gift_certificate=GiftCertificate.new
   end
 
-  # GET /gifts/1/edit
-  def edit
-  end
-
-  # POST /gifts
-  # POST /gifts.json
   def create
-    @gift = Gift.new(gift_params)
-
-    respond_to do |format|
-      if @gift.save
-
-        # Tell the UserMailer to send a welcome Email after save
-        UserMailer.ordered(@gift).deliver
-
-        format.html { redirect_to @gift, notice: 'Gift was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @gift }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @gift.errors, status: :unprocessable_entity }
-      end
+    @gift_certificate=GiftCertificate.new(gift_certificate_params)
+    if @gift_certificate.save
+      redirect_to @gift_certificate
+    else
+      render 'new'
     end
-  end
 
-  # PATCH/PUT /gifts/1
-  # PATCH/PUT /gifts/1.json
-  def update
-    respond_to do |format|
-      if @gift.update(gift_params)
-        format.html { redirect_to @gift, notice: 'Gift was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @gift.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  end 
 
-  # DELETE /gifts/1
-  # DELETE /gifts/1.json
-  def destroy
-    @gift.destroy
-    respond_to do |format|
-      format.html { redirect_to gifts_url }
-      format.json { head :no_content }
-    end
+  def show
+    @gift_certificate = GiftCertificate.find(params[:id])
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_gift
-      @gift = Gift.find(params[:id])
-    end
+    def gift_certificate_params
+      params.require(:gift_certificate).permit(:name, :phone, :time, :email)
+    end             
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def gift_params
-      params.require(:gift).permit(:name, :phone, :time, :email, :type)
-    end
 end
