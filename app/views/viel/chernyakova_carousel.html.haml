@@ -1,0 +1,67 @@
+.masthead
+  .container_viel.orange{:align => 'center'}
+    %br
+    %br
+    %h2{:'font-family' => 'font-centr'} Наши специалисты
+  %hr    
+    %h4.italic.white{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
+    %br
+    %br
+    %br
+    %br
+    %br
+  .container_viel{:align => 'center'}
+    .span3
+      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Чернякова Оксана', :title => 'Чернякова Оксана')
+      %p.white Чернякова Оксана Николаевна, дата рождения 15.05.1974, стаж работы 4 года
+    .span9
+      #myCarousel{:class=>"carousel slide"}
+        %ol{:class=>"carousel-indicators"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"3"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"5"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"6"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"7"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"8"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"9"}
+
+        .carousel-inner
+          .item.active
+            =image_tag('chernyakova1.jpg',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('chernyakova2.jpg',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('chernyakova3.jpg',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('chernyakova4.jpg',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('chernyakova5.jpg',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('chernyakova6.jpg',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('chernyakova7.jpg',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('chernyakova8.jpg',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('chernyakova9.jpg',  :class => 'img-rounded', height: "100", width: "200")
+          .item
+            = image_tag('chernyakova10.jpg',  :class => 'img-rounded', height: "100", width: "390")
+
+          %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
+          %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
+  
+    %br
+  %br
+
+         

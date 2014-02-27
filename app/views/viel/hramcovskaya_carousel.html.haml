@@ -1,0 +1,61 @@
+.masthead
+  .container_viel.orange{:align => 'center'}
+    %br
+    %br
+    %h2{:'font-family' => 'font-centr'} Наши специалисты
+  %hr    
+    %h4.italic.white{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
+    %br
+    %br
+    %br
+    %br
+    %br
+  .container_viel{:align => 'center'}
+    .span3
+      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Храмцовская Капитолина', :title => 'Храмцовская Капитолина')
+      %p.white Храмцовская Капитолина Евгеньевна
+    .span9
+      #myCarousel{:class=>"carousel slide"}
+        %ol{:class=>"carousel-indicators"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"3"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"5"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"6"}
+          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"7"}
+
+        .carousel-inner
+          .item.active
+            =image_tag('hramcovskaya1.JPG',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('hramcovskaya2.JPG',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('hramcovskaya3.JPG',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('hramcovskaya4.JPG',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('hramcovskaya5.JPG',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('hramcovskaya6.JPG',  :class => 'img-rounded', height: "100", width: "200")
+
+          .item
+            = image_tag('hramcovskaya7.JPG',  :class => 'img-rounded', height: "100", width: "390")
+
+          .item
+            = image_tag('hramcovskaya8.JPG',  :class => 'img-rounded', height: "100", width: "390")
+
+
+          %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
+          %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
+  
+    %br
+  %br
+
+         

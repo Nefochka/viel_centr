@@ -11,50 +11,28 @@
     %br
     %br
   .container_viel{:align => 'center'}
-    .span3
-      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Храмцовская Капитолина', :title => 'Храмцовская Капитолина')
-      %p.white Храмцовская Капитолина Евгеньевна
-    .span9
-      #myCarousel{:class=>"carousel slide"}
-        %ol{:class=>"carousel-indicators"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"1"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"2"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"3"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"4"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"5"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"6"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"7"}
+    =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Храмцовская Капитолина', :title => 'Храмцовская Капитолина')
+    %h3.white Храмцовская Капитолина Евгеньевна
+    %h4.white дата рождения 10.03.1990
+    %h4.white стаж работы 4 года
 
-        .carousel-inner
-          .item.active
-            =image_tag('hramcovskaya1.JPG',  :class => 'img-rounded', height: "100", width: "200")
+    .accordion{:id=> 'accordion2'}
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseOne"} 
+            %h3.orange Сертификаты Храмцовской Капитолины Евгеньевны
+        #collapseOne{:class => "accordion-body collapse in"}
+          .accordion-inner
 
-          .item
-            = image_tag('hramcovskaya2.JPG',  :class => 'img-rounded', height: "100", width: "390")
+            = image_tag('hramcovskaya1.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('hramcovskaya2.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('hramcovskaya3.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('hramcovskaya4.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('hramcovskaya5.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('hramcovskaya6.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('hramcovskaya7.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('hramcovskaya8.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
 
-          .item
-            = image_tag('hramcovskaya3.JPG',  :class => 'img-rounded', height: "100", width: "200")
-
-          .item
-            = image_tag('hramcovskaya4.JPG',  :class => 'img-rounded', height: "100", width: "200")
-
-          .item
-            = image_tag('hramcovskaya5.JPG',  :class => 'img-rounded', height: "100", width: "390")
-
-          .item
-            = image_tag('hramcovskaya6.JPG',  :class => 'img-rounded', height: "100", width: "200")
-
-          .item
-            = image_tag('hramcovskaya7.JPG',  :class => 'img-rounded', height: "100", width: "390")
-
-          .item
-            = image_tag('hramcovskaya8.JPG',  :class => 'img-rounded', height: "100", width: "390")
-
-
-          %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
-          %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
-  
     %br
   %br
 

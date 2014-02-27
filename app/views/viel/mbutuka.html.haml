@@ -11,46 +11,22 @@
     %br
     %br
   .container_viel{:align => 'center'}
-    .span3
-      =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Мбутука Роман', :title => 'Мбутука Роман')
-      %p.white Мбутука Роман Чолавич, дата рождения 11.07.1985, стаж работы 9 лет
-    .span9
-      #myCarousel{:class=>"carousel slide"}
-        %ol{:class=>"carousel-indicators"}
-          %li{:'data-target'=>"#myCarousel", :'data-slide-to'=>"0", :class=>"active"}
+    =image_tag('logotyp.png',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Мбутука Роман', :title => 'Мбутука Роман')
+    %h3.white Мбутука Роман Чолавич 
+    %h4.white дата рождения 11.07.1985
+    %h4.white стаж работы 9 лет
 
-        .carousel-inner
-          .item.active
-            =image_tag('',  :class => 'img-rounded', height: "100", width: "200")
+    .accordion{:id=> 'accordion2'}
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseOne"} 
+            %h3.orange Сертификаты Мбутука Романа Чолавича
+        #collapseOne{:class => "accordion-body collapse in"}
+          .accordion-inner
 
-          .item
-            = image_tag('',  :class => 'img-rounded', height: "100", width: "390")
-
-          .item
-            = image_tag('bychik3.JPG',  :class => 'img-rounded', height: "100", width: "390")
-
-          .item
-            = image_tag('bychik4.JPG',  :class => 'img-rounded', height: "100", width: "395")
-
-          .item
-            = image_tag('bychik5.JPG',  :class => 'img-rounded', height: "100", width: "208")
-
-          .item
-            = image_tag('bychik6.JPG',  :class => 'img-rounded', height: "100", width: "400")
-
-          .item
-            = image_tag('bychik7.JPG',  :class => 'img-rounded', height: "100", width: "200")
-
-          .item
-            = image_tag('bychik8.JPG',  :class => 'img-rounded', height: "100", width: "400")
-
-          .item
-            = image_tag('bychik9.JPG',  :class => 'img-rounded', height: "100", width: "207")
+            = image_tag('mbutuka1.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
 
 
-          %a{:class=>"carousel-control left", :href=>"#myCarousel", :'data-slide'=>"prev"} &lsaquo;
-          %a{:class=>"carousel-control right", :href=>"#myCarousel", :'data-slide'=>"next"} &rsaquo;
-  
     %br
   %br
 
