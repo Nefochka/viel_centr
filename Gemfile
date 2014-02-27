@@ -18,7 +18,7 @@ end
 
 # Use haml
 gem 'haml'
-gem 'jquery-rails'
+# gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails_12factor', group: :production
 
