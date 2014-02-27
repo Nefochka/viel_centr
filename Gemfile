@@ -24,7 +24,7 @@ gem 'rails_12factor', group: :production
 
 # Use Postdresql as the database for Active Record
 gem 'pg'
-gem 'annotate'
+# gem 'annotate'
 gem 'foreigner'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
