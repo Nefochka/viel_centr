@@ -37,7 +37,16 @@
 
 
 
-      = yield      
+
+      = yield  
+
+    .row-fluid
+      .span3
+        = render :partial => 'shared/facebook_button'
+        %br
+        = render :partial => 'shared/twitter_button'
+        %br
+        = render :partial => 'shared/vkontakte_button'    
 
       %footer
         %hr
