@@ -1,10 +1,16 @@
 #vk_like
 
+
 :javascript
   $(function(){
     VK.init({
-        apiId: #{VK_APP_ID},
+        apiId: 4224369,
         onlyWidgets: true
       });
+ 
     VK.Widgets.Like('vk_like');
+    VK.Widgets.Comments('vk_like', {limit: 10, width: "496", attach: false});
   });
+
+
+
