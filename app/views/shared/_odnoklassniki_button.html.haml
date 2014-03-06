@@ -1,0 +1,19 @@
+#ok_shareWidget
+
+:javascript
+  !function (d, id, did, st) {
+    var js = d.createElement("script");
+    js.src = "http://connect.ok.ru/connect.js";
+    js.onload = js.onreadystatechange = function () {
+    if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+      if (!this.executed) {
+        this.executed = true;
+        setTimeout(function () {
+          OK.CONNECT.insertShareWidget(id,did,st);
+        }, 0);
+      }
+    }};
+    d.documentElement.appendChild(js);
+  }(document,"ok_shareWidget","http://viel-centr.herokuapp.com/","{width:190,height:30,st:'straight',sz:20,ck:2}");
+
+
