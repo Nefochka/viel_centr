@@ -1,6 +1,5 @@
 #vk_like
-
-
+                      
 :javascript
   $(function(){
     VK.init({
@@ -12,5 +11,11 @@
     VK.Widgets.Comments('vk_like', {limit: 10, width: "496", attach: false});
   });
 
+#vk_comments
 
+:javascript
+  window.onload = function () {
+  VK.init({apiId: 4224369, onlyWidgets: true});
+  VK.Widgets.Comments('vk_comments', {width: 500, limit: 15}, 321);
+  }
 

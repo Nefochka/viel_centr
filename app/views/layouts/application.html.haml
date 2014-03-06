@@ -18,7 +18,11 @@
 
     :javascript
       src="//vk.com/js/api/openapi.js?105"
+      charset="windows-1251"
 
+    =stylesheet_link_tag 'application',:href=>"http://stg.odnoklassniki.ru/share/odkl_share.css"
+    :javascript
+      src="http://stg.odnoklassniki.ru/share/odkl_share.js"
     
 
   %body.background_viel{:class => controller_name}
@@ -37,7 +41,7 @@
       = render :partial => 'layouts/menu'
       = render :partial => 'layouts/side_menu'
 
-
+      onload="ODKL.init();
 
       = yield  
 
