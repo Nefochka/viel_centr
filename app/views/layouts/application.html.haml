@@ -16,13 +16,9 @@
     = csrf_meta_tags
     = render :partial => 'layouts/simplebox'
 
+    %script{src: "//vk.com/js/api/openapi.js?105", type: "text/javascript"}
     :javascript
-      src="//vk.com/js/api/openapi.js?105"
-      charset="windows-1251"
-
-    =stylesheet_link_tag 'application',:href=>"http://stg.odnoklassniki.ru/share/odkl_share.css"
-    :javascript
-      src="http://stg.odnoklassniki.ru/share/odkl_share.js"
+      VK.init({apiId: 4224369, onlyWidgets: true});
     
 
   %body.background_viel{:class => controller_name, :onload=>'ODKL.init()'}
@@ -38,9 +34,10 @@
           .container{:align => 'right'}
     
           
-      .masthead
-      = render :partial => 'layouts/menu'
-      = render :partial => 'layouts/side_menu'
+      - if !current_page?(action: "index", controller: "admin") && !current_page?(action: "admin_appointments", controller: 'admin') && !current_page?(action: "admin_gifts", controller: 'admin') && !current_page?(action: "admin_users", controller: 'admin')
+        .masthead
+          = render :partial => 'layouts/menu'
+          = render :partial => 'layouts/side_menu'
 
 
 

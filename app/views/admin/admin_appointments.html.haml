@@ -1,0 +1,42 @@
+
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
+%br
+%br
+%li
+  = link_to 'Меню администратора', admin_path, :class => 'button_viel'
+
+%br
+%br
+%h1.white Заявки на процедуры
+%br
+
+%table.white{:border=>"1"}
+  %tr
+    %td Имя
+    %td Телефон
+    %td Время звонка
+    %td Почта
+    %td Процедура
+    %td Специалист
+    %td Дата заявки
+  - @appointment_list.each do |appointments|
+    %tr
+      %td 
+        = appointments.name
+      %td 
+        = appointments.phone
+      %td 
+        = appointments.bell
+      %td 
+        = appointments.email
+      %td 
+        = appointments.procedure
+      %td 
+        = appointments.specialist
+      %td 
+        = appointments.created_at
+
+
+
+

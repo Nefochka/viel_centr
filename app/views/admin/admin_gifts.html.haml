@@ -1,0 +1,32 @@
+
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
+%br
+%br
+%li
+  = link_to 'Меню администратора', admin_path, :class => 'button_viel'
+%br
+%br
+%h2.white  Заявки на подарочные сертификаты
+%br
+
+%table.white{:border=>"1"}
+  %tr
+    %td Имя
+    %td Телефон
+    %td Время звонка
+    %td Почта
+    %td Дата заявки
+  - @gifts_list.each do |gifts|
+    %tr
+      %td 
+        = gifts.name
+      %td 
+        = gifts.phone
+      %td 
+        = gifts.time
+      %td 
+        = gifts.email
+      %td 
+        = gifts.created_at
+

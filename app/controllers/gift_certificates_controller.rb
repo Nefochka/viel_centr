@@ -8,8 +8,10 @@ class GiftCertificatesController < ApplicationController
   end
 
   def create
-    @gift_certificate=GiftCertificate.new(gift_certificate_params)
+    @gift_certificate = GiftCertificate.new(gift_certificate_params)
     if @gift_certificate.save
+      Gift_certificatesMailer.ordered_to_client(@gift_certificate).deliver
+      Gift_certificatesMailer.ordered_to_admin(@gift_certificate).deliver
       redirect_to @gift_certificate
     else
       render 'new'
@@ -22,6 +24,11 @@ class GiftCertificatesController < ApplicationController
   end
 
   private
+
+    def set_gift_certificate
+      @gift_certificate = GiftCertificate.find(params[:id])
+    end
+
     def gift_certificate_params
       params.require(:gift_certificate).permit(:name, :phone, :time, :email)
     end             

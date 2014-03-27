@@ -1,0 +1,44 @@
+
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
+%br
+%br
+%li
+  = link_to 'Меню администратора', admin_path, :class => 'button_viel'
+
+%br
+%br
+%h1.white Зарегистрированные пользователи
+%br
+
+%table.white{:border=>"1"}
+  %tr
+    %th Логин
+    %th Имя
+    %th Фамилия
+    %th Почта
+    %th Админ
+    %th Создан
+    %th Последний вход
+    %th
+  - @user_list.each do |users|
+    %tr
+      %td 
+        = users.nickname
+      %td 
+        = users.first_name
+      %td 
+        = users.last_name
+      %td 
+        = users.email
+      %td 
+        = users.admin
+      %td 
+        = users.created_at
+      %td 
+        = users.last_login_at
+      %td 
+        = link_to 'Удалить', users, method: :delete, data: {confirm: "Вы уверены?"}
+
+
+

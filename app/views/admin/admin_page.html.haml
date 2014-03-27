@@ -1,0 +1,28 @@
+
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
+%br
+%br
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Заявки на процедуры', admin_appointments_path, :class => 'button_viel'
+%br
+%br
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Заявки на подарочные сертификаты', admin_gifts_path, :class => 'button_viel'
+%br
+%br
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Зарегистрированные пользователи', admin_users_path, :class => 'button_viel'
+%br
+%br
+
+%h1.white Страница администратора
+%br
+
+-# %table{:border=>"1"}
+  %tr
+    %td Логин
+  = @appointment_list.each do |appointments|
+    %tr
+      %td = @appointments.name
+

@@ -1,0 +1,61 @@
+#viel-modal.OrangeRed.modal.hide.fade{:tabindex=>"-1", :role=>"dialog", :'aria-labelledby'=>"my_modal_label", :'aria-hidden'=>"true", :method => 'post', :action => 'mailto: parshukova.elena@gmail.com'}
+  .modal-header
+    .button{:type=>"button", :class=>"close", :'data-dismiss'=>"modal", :'aria-hidden'=>"true"}×
+    %h3#my_modal_label
+      Запись на процедуру
+
+  .modal-body
+    %h8.italic 
+       
+    %br
+    %br
+    = form_for Appointment.new, :url => appointments_path, :html => {:class => 'form-vertical'} do |f|
+      -# блок для имени
+      .control-group
+        .controls
+          = f.text_field :name, :placeholder => 'Имя*', :required => 'Ваше имя'
+
+      -# блок для телефона
+      .control-group
+        .controls
+          = f.text_field :phone, :placeholder => 'Контактный телефон*', :required => 'Ваш телефон'
+
+      -# блок для времени звонка
+      .control-group
+        .controls
+          = f.text_area :bell, :placeholder => 'В какое время Вам лучше позвонить?'
+
+      -# блок для e-mail
+      .control-group
+        .controls
+          = f.email_field :email, :placeholder => 'Ваш e-mail'
+
+      -# блок для процедуры
+      .control-group
+        .controls
+          = f.select :procedure, procedures_options_helper
+
+      -# блок для выбора специалиста
+      .control-group
+        .controls
+          = f.select :specialist, specialists_options_helper
+
+      %h8.italic ВНИМАНИЕ! Поля, помеченные *, обязательны для заполнения
+
+  .modal-footer
+    .button.btn.btn-primary#submit_form Отправить заказ
+
+:javascript
+  $('#submit_form').click(function(){
+    if (!$.trim($('#appointment_name').val())) {
+      $('#appointment_name').focus();
+      return;
+    }
+
+    if (!$.trim($('#appointment_phone').val())) {
+      $('#appointment_phone').focus();
+      return;
+    }
+    
+    $('form#new_appointment').submit();
+  });

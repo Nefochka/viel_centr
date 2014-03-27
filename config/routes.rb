@@ -1,5 +1,9 @@
 VielCentr::Application.routes.draw do
 
+  get 'admin' => 'admin#admin_page'
+  get 'admin_appointments' => 'admin#admin_appointments'
+  get 'admin_gifts' => 'admin#admin_gifts'
+  get 'admin_users' => 'admin#admin_users'
   get 'login' => 'user_sessions#new'
   post 'login' => 'user_sessions#create'
   delete 'logout' => 'user_sessions#destroy'
@@ -9,9 +13,14 @@ VielCentr::Application.routes.draw do
 
   resources :gift_certificates
 
+  resources :appointments
+
   resources :simplebox
 
   resources :users
+
+  resources :admin
+    get "admin/admin_page"
 
   get "viel/massage" => 'viel#massage'
   get "viel/cosmetics"
@@ -39,7 +48,7 @@ VielCentr::Application.routes.draw do
   get "viel/vasilenko"
 
   resources :orders
-  get "orders/new"
+    get "orders/new"
 
 
   resources :viel, :only => [:index] do

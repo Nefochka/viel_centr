@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
   include Authentication
   include Redirects
 
+
   private
   def after_login_path
     # TODO: decide where to reditrect after login

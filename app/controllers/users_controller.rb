@@ -8,12 +8,19 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+  
+  def destroy
+    User.find(params[:id]).destroy
+    flash[:success] = "Пользователь удален."
+    redirect_to admin_users_path
+  end
 
   def create
    # TODO: make sure nickname & email are not yet used, otherwise raise exception
    @user = User.new(user_params)
     if @user.save
-      UserMailer.welcome(@user).deliver
+      UsersMailer.registered(@user).deliver
+      UsersMailer.ordered_to_admin(@user).deliver
     else
       render :action => :new
       return
