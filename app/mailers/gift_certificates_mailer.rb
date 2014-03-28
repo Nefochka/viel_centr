@@ -1,5 +1,5 @@
 class Gift_certificatesMailer < ActionMailer::Base
-  default :from => "parshukova.elena@gmail.com"
+  default :from => "viel-centr@rambler.ru"
   
   def ordered_to_client(gift_certificate)
     @gift_certificate = gift_certificate
@@ -10,7 +10,7 @@ class Gift_certificatesMailer < ActionMailer::Base
   def ordered_to_admin(gift_certificate)
     @gift_certificate = gift_certificate
 #    attachments["rails.png"] = File.read("#{Rails.root}/public/images/rails.png")
-    mail(:to => "admin <parshukova.elena@gmail.com>", :subject => "Заявка на подарочный сертификат")
+    mail(:to => "admin <viel-centr@rambler.ru>", :subject => "Заявка на подарочный сертификат")
   end
 
 
