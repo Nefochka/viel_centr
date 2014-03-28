@@ -1,8 +1,8 @@
 ActionMailer::Base.smtp_settings = {
-  :address => "smtp.gmail.com",
+  :address => "smtp.rambler.ru",
   :port => 587,
-  :domain => "gmail.com",
-  :user_name => "vielcentr",
+  :domain => "rambler.ru",
+  :user_name => "viel-centr",
   :password => "vielcentr",
   :authentication => "plain",
   :enable_starttls_auto => true
