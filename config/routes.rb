@@ -46,6 +46,7 @@ VielCentr::Application.routes.draw do
   get "viel/mbutuka"
   get "viel/hramcovskaya"
   get "viel/vasilenko"
+  get "viel/bekova"
 
   resources :orders
     get "orders/new"
@@ -77,6 +78,7 @@ VielCentr::Application.routes.draw do
     get :mbutuka, :on => :collection
     get :hramcovskaya, :on => :collection
     get :vasilenko, :on => :collection
+    get :bekova, :on => :collection
 
   end
 

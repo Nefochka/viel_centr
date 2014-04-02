@@ -1,0 +1,40 @@
+.masthead
+  .container_viel.orange{:align => 'center'}
+    %br
+    %br
+    %h2{:'font-family' => 'font-centr'} Наши специалисты
+  %hr    
+    %h4.italic.white{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
+    %br
+    %br
+    %br
+
+  .container_viel{:align => 'center'}
+    =image_tag('bekova.jpg',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Бычик Виолетта', :title => 'Бычик Виолетта')
+    %h3.orange Бекова Зарина Мухарбековна
+    %h4.white – дата рождения 26.04.1985, стаж работы 4 года
+    %h4.white стаж 4 года
+
+    .accordion{:id=> 'accordion2'}
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseOne"} 
+            %h3.orange Сертификаты Бековой Зарины Мухарбековны
+        #collapseOne{:class => "accordion-body collapse in"}
+          .accordion-inner
+
+            = image_tag('bekova1.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('bekova2.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('bekova3.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('bekova4.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('bekova5.JPG',  :class => 'class_large_my_2', height: "100", width: "156")
+            = image_tag('bekova6.JPG',  :class => 'class_large_my_2', height: "100", width: "300")
+
+    %br
+    %a{:rel=>"simplebox", :href=>"/simplebox/imgs/simplebox.png", width: "300"}
+      = image_tag("bychik2.JPG", width: "156")
+
+
+  %br
+
+         
