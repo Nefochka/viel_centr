@@ -38,8 +38,11 @@ VielCentr::Application.routes.draw do
   get "viel/spa_procedures"
   get "viel/wraps"
   get "viel/peelings"
+  get "viel/thai_massage"
+  get "viel/manicure_pedicure"
   get "viel/education"
   get "viel/about_us"
+  get "viel/our_experts"
   get "viel/spa_etiquette"
   get "viel/bychik"
   get "viel/chernyakova"
@@ -58,6 +61,8 @@ VielCentr::Application.routes.draw do
     get :spa_procedures, :on => :collection
     get :wraps, :on => :collection
     get :peelings, :on => :collection
+    get :thai_massage, :on => :collection
+    get :manicure_pedicure, :on => :collection
     get :education, :on => :collection
 
     get :cosmetics, :on => :collection
@@ -72,6 +77,7 @@ VielCentr::Application.routes.draw do
     get :appointment, :on => :collection
     get :home, :on => :collection
     get :about_us, :on => :collection
+    get :our_experts, :on => :collection
     get :spa_etiquette, :on => :collection
     get :bychik, :on => :collection
     get :chernyakova, :on => :collection

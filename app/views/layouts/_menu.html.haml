@@ -5,7 +5,9 @@
       %li{:class => set_active_if(:home, @menu_item)}
         =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
       %li{:class => set_active_if(:about_us, @menu_item)}
-        =link_to 'Наши специалисты', about_us_viel_index_path, :class => 'button_viel'
+        =link_to 'О нас', about_us_viel_index_path, :class => 'button_viel'
+      %li{:class => set_active_if(:our_experts, @menu_item)}
+        =link_to 'Наши специалисты', our_experts_viel_index_path, :class => 'button_viel'
 
       %li{:class => set_active_if(:gallery, @menu_item)}
         =link_to 'Галерея', gallery_viel_index_path, :class => 'button_viel'
