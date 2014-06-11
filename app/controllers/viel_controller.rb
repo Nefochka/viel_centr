@@ -14,6 +14,10 @@ class VielController < ApplicationController
   def cosmetics
   end
 
+  def feedback
+    @feedbacks_list=Feedback.all
+  end
+
   def gallery
   end
 

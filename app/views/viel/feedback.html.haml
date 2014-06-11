@@ -1,32 +1,45 @@
 .masthead
 
-  .span3.orange 
-    %h3.page-header
-      Отзывы
-    %address
-    %h4.white
-      %strong Адрес:
-      Краснодар, Бульвар Платановый, 4
-      %br
-      %strong <abbr title="Email">e-mail:</abbr>
-      = mail_to 'viel-centr@rambler.ru', 'viel-centr@rambler.ru', {:subject => '"Виэль", центр красоты и здоровья'}
-      %br
-      %strong <abbr title="Телефон">тел.:</abbr> +7 (938) 429-23-28
-      %br
-      %strong <abbr title="Web-адрес">Web-адрес:</abbr>
-      http://www.viel-centr.ru/,
-      http://www.vielcentr.ru/
+  .span3.orange{:'z-index'=> '10'} 
+    %br
+
+    %table.black{:border=>"1", :width=>500}
+      %tr.darkorange{:bgcolor=> "white"}
+        %th Имя
+        %th Дата
+        %th Отзыв
+      - @feedbacks_list.each do |feedbacks|
+        - if feedbacks.status == true
+          %tr{:bgcolor=> "white"}
+            %td 
+              = User.find(feedbacks.user_id).name
+            %td{:'font-size'=>'1'} 
+              = feedbacks.created_at
+            %td 
+              = feedbacks.review
+    %br
+    %br
 
 
-      %br
-      %br 
-      %br
-      %br
-      %br
-      %br       
+    - if !current_user
+      %li.strong
+        %h3
+          = link_to 'Если хотите оставить отзыв, войдите под своим логином или зарегистрируйтесь.', login_path, :class => 'button'
+    - if current_user
+      %a{:href=>"#viel-modal", :role=>"button", :class=>"btn btn-large btn-primary", :'data-toggle'=>"modal", :align => 'center'} Оставить отзыв
+      = render :partial => 'dialogs/feedbacks'
+
+ 
+
+
+    %br
+    %br 
+    %br
+    %br
+    %br
+    %br       
   .container{:align => 'center'}
     = image_tag('01-trans.png',  :class => 'img-rounded', height: "462", width: "678")
-
 
 
 

@@ -4,6 +4,7 @@ VielCentr::Application.routes.draw do
   get 'admin_appointments' => 'admin#admin_appointments'
   get 'admin_gifts' => 'admin#admin_gifts'
   get 'admin_users' => 'admin#admin_users'
+  get 'admin_feedbacks' => 'admin#admin_feedbacks'
   get 'login' => 'user_sessions#new'
   post 'login' => 'user_sessions#create'
   delete 'logout' => 'user_sessions#destroy'
@@ -12,6 +13,8 @@ VielCentr::Application.routes.draw do
   root 'viel#home'
 
   resources :gift_certificates
+
+  resources :feedbacks
 
   resources :appointments
 

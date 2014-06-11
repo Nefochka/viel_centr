@@ -1,4 +1,3 @@
-
 %li{:class => set_active_if(:home, @menu_item)}
   =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
 %br
@@ -13,6 +12,10 @@
 %br
 %li{:class => set_active_if(:home, @menu_item)}
   =link_to 'Зарегистрированные пользователи', admin_users_path, :class => 'button_viel'
+%br
+%br
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Отзывы', admin_feedbacks_path, :class => 'button_viel'
 %br
 %br
 
