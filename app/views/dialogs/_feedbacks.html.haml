@@ -1,0 +1,29 @@
+#viel-modal.OrangeRed.modal.hide.fade{:tabindex=>"-1", :role=>"dialog", :'aria-labelledby'=>"my_modal_label", :'aria-hidden'=>"true", :method => 'post', :action => 'mailto: parshukova.elena@gmail.com'}
+  .modal-header
+    .button{:type=>"button", :class=>"close", :'data-dismiss'=>"modal", :'aria-hidden'=>"true"}×
+    %h3#my_modal_label
+      Отзыв
+
+  .modal-body
+    %h8.italic 
+       
+    %br
+    %br
+    = form_for Feedback.new, :url => feedbacks_path, :html => {:class => 'form-vertical'} do |f|
+
+      -# блок для отзыва
+      .control-group
+        .controls
+          = f.text_area :review, :placeholder => 'Оставьте свой отзыв'
+
+
+
+  .modal-footer
+    .button.btn.btn-primary#submit_form Сохранить отзыв
+
+:javascript
+  $('#submit_form').click(function(){
+
+    $('form#new_feedback').submit();
+  });
+

@@ -1,0 +1,34 @@
+
+%li{:class => set_active_if(:home, @menu_item)}
+  =link_to 'Главная', home_viel_index_path, :class => 'button_viel'
+%br
+%br
+%li
+  = link_to 'Меню администратора', admin_path, :class => 'button_viel'
+%br
+%br
+%h2.white  Отзывы
+%br
+
+%table.white{:border=>"1"}
+  %tr
+    %th Имя
+    %th Отзыв
+    %th Статус для отображения
+    %th Дата создания отзыва
+    %th
+  - @feedbacks_list.each do |feedbacks|
+    %tr
+      %td 
+        = User.find(feedbacks.user_id).name
+      %td 
+        = feedbacks.review
+      %td 
+        = feedbacks.status
+      %td 
+        = feedbacks.created_at
+      %td 
+        = link_to 'Удалить', feedbacks, method: :delete, data: {confirm: "Вы уверены?"}
+      %td 
+        = link_to 'Сменить статус', feedbacks, method: :patch, data: {confirm: "Вы уверены?"}
+
