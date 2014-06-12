@@ -13,6 +13,7 @@
 %table.white{:border=>"1"}
   %tr
     %th Имя
+    %th Логин
     %th Отзыв
     %th Статус для отображения
     %th Дата создания отзыва
@@ -22,13 +23,18 @@
       %td 
         = User.find(feedbacks.user_id).name
       %td 
+        = User.find(feedbacks.user_id).nickname
+      %td 
         = feedbacks.review
       %td 
-        = feedbacks.status
+        - if feedbacks.status
+          отображать
+        - elsif 
+          не отображать
       %td 
-        = feedbacks.created_at
+        = feedbacks.created_at.strftime("%d/%m/%y %H:%M")
       %td 
         = link_to 'Удалить', feedbacks, method: :delete, data: {confirm: "Вы уверены?"}
       %td 
-        = link_to 'Сменить статус', feedbacks, method: :patch, data: {confirm: "Вы уверены?"}
+        = link_to 'Изменить статус', feedbacks, method: :patch, data: {confirm: "Вы уверены?"}
 
