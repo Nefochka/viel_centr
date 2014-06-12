@@ -1,20 +1,22 @@
 .masthead
 
-  .span3.orange{:'z-index'=> '10'} 
+  .container.orange{:'z-index'=> '10', :align => 'center'} 
+    %br
+    %br
     %br
 
-    %table.black{:border=>"1", :width=>500}
+    %table.black{:border=>"1", :width=>1000}
       %tr.darkorange{:bgcolor=> "white"}
-        %th Имя
+        %th Логин
         %th Дата
         %th Отзыв
       - @feedbacks_list.each do |feedbacks|
         - if feedbacks.status == true
           %tr{:bgcolor=> "white"}
             %td 
-              = User.find(feedbacks.user_id).name
+              = User.find(feedbacks.user_id).nickname
             %td{:'font-size'=>'1'} 
-              = feedbacks.created_at
+              = feedbacks.created_at.strftime("%d/%m/%y %H:%M")
             %td 
               = feedbacks.review
     %br

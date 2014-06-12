@@ -37,7 +37,8 @@
       - if !current_page?(action: "index", controller: "admin") && !current_page?(action: "admin_appointments", controller: 'admin') && !current_page?(action: "admin_gifts", controller: 'admin') && !current_page?(action: "admin_users", controller: 'admin') && !current_page?(action: "admin_feedbacks", controller: 'admin')
         .masthead
           = render :partial => 'layouts/menu'
-          = render :partial => 'layouts/side_menu'
+          - if !current_page?(action: "index", controller: "admin") && !current_page?(action: "admin_appointments", controller: 'admin') && !current_page?(action: "admin_gifts", controller: 'admin') && !current_page?(action: "admin_users", controller: 'admin') && !current_page?(action: "admin_feedbacks", controller: 'admin') && !current_page?(action: "feedback", controller: 'viel')
+            = render :partial => 'layouts/side_menu'
 
 
 
