@@ -43,6 +43,7 @@ VielCentr::Application.routes.draw do
   get "viel/peelings"
   get "viel/thai_massage"
   get "viel/manicure_pedicure"
+  get "viel/psychologist"
   get "viel/education"
   get "viel/about_us"
   get "viel/our_experts"
@@ -66,6 +67,7 @@ VielCentr::Application.routes.draw do
     get :peelings, :on => :collection
     get :thai_massage, :on => :collection
     get :manicure_pedicure, :on => :collection
+    get :psychologist, :on => :collection
     get :education, :on => :collection
 
     get :cosmetics, :on => :collection

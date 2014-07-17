@@ -16,11 +16,14 @@
       %li{:class => set_active_if(:peelings, @side_menu_item)}
         =link_to 'Пиллинги', peelings_viel_index_path, :class => 'button_viel_menu'
       %br
-      %li{:class => set_active_if(:peelings, @side_menu_item)}
+      %li{:class => set_active_if(:thai_massage, @side_menu_item)}
         =link_to 'Тайский массаж', thai_massage_viel_index_path, :class => 'button_viel_menu'
       %br
-      %li{:class => set_active_if(:peelings, @side_menu_item)}
+      %li{:class => set_active_if(:manicure_pedicure, @side_menu_item)}
         =link_to 'Маникюр, педикюр', manicure_pedicure_viel_index_path, :class => 'button_viel_menu'
+      %br
+      %li{:class => set_active_if(:psychologist, @side_menu_item)}
+        =link_to 'Психолог', psychologist_viel_index_path, :class => 'button_viel_menu'
       %br
       %br
       %li{:class => set_active_if(:education, @side_menu_item)}
