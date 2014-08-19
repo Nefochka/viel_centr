@@ -5,6 +5,80 @@ body {
   padding-top: 20px;
   padding-bottom: 60px;
 }
+.citate1 {
+    overflow:auto; 
+    height:80px; 
+    width:450px; 
+    padding:8px; 
+    border:1px solid #ccc;
+}
+
+.citate {
+    margin-top: 12px;
+    overflow: hidden;
+    padding: 0 0 15px;
+    position: relative;
+    width: 395px;
+    background:url(/themes/irecommend/images/bg_citate.png)
+}
+
+.citate_my {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 15px;
+    position: relative;
+    max-height:80px;
+    width: 550px;
+    background:url(citate4.jpeg);
+    background-repeat: no-repeat;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    overflow:auto;
+    background-size: cover;
+    border:2px solid OrangeRed;
+}
+
+.action {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 15px;
+    position: relative;
+    max-height:80px;
+    width: 550px;
+    background:url(citate4.jpeg);
+    background-repeat: no-repeat;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    overflow:auto;
+    background-size: cover;
+    border:2px solid OrangeRed;
+}
+
+.kom_message{
+    margin-top:10px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    background:url(citate3.jpeg);
+    border:1px solid #f5f1ff;
+    padding:20px;}
 
 .blue {
   color: #33aaff;
@@ -109,6 +183,15 @@ p.font_viel_centr{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.background_viel3 {
+    margin: 0 auto; 
+    padding: 0px;
+    background: #b4df5b;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .background_viel2 {
     height: 200px; 
     width: 350px; 
@@ -163,7 +246,7 @@ textarea {
 }
 
 a {
-  color: DarkOrange;
+  color: OrangeRed;
   font-face: font_viel_emblema;
   text-decoration: none;
 }
@@ -825,3 +908,5 @@ table_viel th[class*="span"],
     right: 200px;
     z-index: 99;
 }
+
+

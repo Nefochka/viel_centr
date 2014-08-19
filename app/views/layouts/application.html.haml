@@ -21,11 +21,11 @@
       VK.init({apiId: 4224369, onlyWidgets: true});
     
 
-  %body.background_viel{:class => controller_name, :onload=>'ODKL.init()'}
+  %body.background_viel3{:class => controller_name, :onload=>'ODKL.init()'}
     #fb-root
     .container
       .masthead
-        %h3.orange
+        %h3.OrangeRed
           = link_to image_tag('logotyp_2.jpg',  :class => 'img-rounded', height: "77", width: "130"), root_url, data: {'no-turbolink' => true, :'font-family' => 'font_viel_emblema'}
          
           = link_to '"Виэль", центр красоты и здоровья', root_url, data: {'no-turbolink' => true, :'font-family' => 'font_viel_emblema', :align => 'center'}
@@ -37,7 +37,7 @@
       - if !current_page?(action: "index", controller: "admin") && !current_page?(action: "admin_appointments", controller: 'admin') && !current_page?(action: "admin_gifts", controller: 'admin') && !current_page?(action: "admin_users", controller: 'admin') && !current_page?(action: "admin_feedbacks", controller: 'admin')
         .masthead
           = render :partial => 'layouts/menu'
-          - if !current_page?(action: "index", controller: "admin") && !current_page?(action: "admin_appointments", controller: 'admin') && !current_page?(action: "admin_gifts", controller: 'admin') && !current_page?(action: "admin_users", controller: 'admin') && !current_page?(action: "admin_feedbacks", controller: 'admin') && !current_page?(action: "feedback", controller: 'viel')
+          - if !current_page?(action: "index", controller: "admin") && !current_page?(action: "admin_appointments", controller: 'admin') && !current_page?(action: "admin_gifts", controller: 'admin') && !current_page?(action: "admin_users", controller: 'admin') && !current_page?(action: "admin_feedbacks", controller: 'admin') 
             = render :partial => 'layouts/side_menu'
 
 

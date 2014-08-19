@@ -1,34 +1,32 @@
 .masthead
 
-  .container.orange{:'z-index'=> '10', :align => 'center'} 
-    %br
-    %br
-    %br
-
-    %table.black{:border=>"1", :width=>1000}
-      %tr.darkorange{:bgcolor=> "white"}
-        %th Логин
-        %th Дата
-        %th Отзыв
-      - @feedbacks_list.each do |feedbacks|
-        - if feedbacks.status == true
-          %tr{:bgcolor=> "white"}
-            %td 
-              = User.find(feedbacks.user_id).nickname
-            %td{:'font-size'=>'1'} 
-              = feedbacks.created_at.strftime("%d/%m/%y %H:%M")
-            %td 
-              = feedbacks.review
-    %br
-    %br
-
+  .span7.OrangeRed{:'z-index'=> '10', :align => 'center'} 
 
     - if !current_user
       %li.strong
         %h3
           = link_to 'Если хотите оставить отзыв, войдите под своим логином или зарегистрируйтесь.', login_path, :class => 'button'
     - if current_user
-      %a{:href=>"#viel-modal", :role=>"button", :class=>"btn btn-large btn-primary", :'data-toggle'=>"modal", :align => 'center'} Оставить отзыв
+      %a{:href=>"#viel-modal", :role=>"button", :class=>"btn btn-large btn-primary", :'data-toggle'=>"modal", :align => 'center'} Оставить свой отзыв
+      = render :partial => 'dialogs/feedbacks'
+
+
+    %br
+      - @feedbacks_list.each do |feedbacks|
+        - if feedbacks.status == true
+          %h5.OrangeRed{:align=> 'right'}
+            = User.find(feedbacks.user_id).nickname
+            = feedbacks.created_at.strftime("%d/%m/%y %H:%M")
+          .citate_my
+            %h4.black
+              = feedbacks.review
+
+    - if !current_user
+      %li.strong
+        %h3
+          = link_to 'Если хотите оставить отзыв, войдите под своим логином или зарегистрируйтесь.', login_path, :class => 'button'
+    - if current_user
+      %a{:href=>"#viel-modal", :role=>"button", :class=>"btn btn-large btn-primary", :'data-toggle'=>"modal", :align => 'center'} Оставить свой отзыв
       = render :partial => 'dialogs/feedbacks'
 
  
@@ -40,7 +38,7 @@
     %br
     %br
     %br       
-  .container{:align => 'center'}
+  .container_viel{:align => 'center'}
     = image_tag('01-trans.png',  :class => 'img-rounded', height: "462", width: "678")
 
 
