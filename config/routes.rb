@@ -49,11 +49,10 @@ VielCentr::Application.routes.draw do
   get "viel/our_experts"
   get "viel/spa_etiquette"
   get "viel/bychik"
-  get "viel/chernyakova"
+  get "viel/zadorozhnaya"
   get "viel/mbutuka"
   get "viel/hramcovskaya"
-  get "viel/vasilenko"
-  get "viel/bekova"
+  get "viel/yakubjanova"
 
   resources :orders
     get "orders/new"
@@ -85,11 +84,10 @@ VielCentr::Application.routes.draw do
     get :our_experts, :on => :collection
     get :spa_etiquette, :on => :collection
     get :bychik, :on => :collection
-    get :chernyakova, :on => :collection
+    get :zadorozhnaya, :on => :collection
     get :mbutuka, :on => :collection
     get :hramcovskaya, :on => :collection
-    get :vasilenko, :on => :collection
-    get :bekova, :on => :collection
+    get :yakubjanova, :on => :collection
 
   end
 
