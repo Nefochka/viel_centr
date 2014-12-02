@@ -1,0 +1,38 @@
+.masthead
+  .container_viel.OrangeRed{:align => 'center'}
+    %br
+    %br
+    %h2{:'font-family' => 'font-centr'} Наши специалисты
+  %hr    
+    %h4.italic.black{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
+    %br
+    %br
+    %br
+
+  .container_viel{:align => 'center'}
+    =image_tag('sharevich.jpg',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Шаревич Юлия', :title => 'Шаревич Юлия')
+    %h3.OrangeRed Шаревич Юлия Борисовна
+    %h4.black дата рождения 03.07.1976
+    %h4.black стаж 3 года
+
+    .accordion{:id=> 'accordion2'}
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseOne"} 
+            %h3.OrangeRed Сертификаты Шаревич Юлии Борисовны
+        #collapseOne{:class => "accordion-body collapse in"}
+          .accordion-inner
+
+            = image_tag('sharevich_2.jpg',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('sharevich_1.jpg',  :class => 'class_large_my_2', height: "100", width: "156")
+
+
+
+    %br
+    %a{:rel=>"simplebox", :href=>"/simplebox/imgs/simplebox.png", width: "300"}
+      = image_tag("bychik2.JPG", width: "156")
+
+
+  %br
+
+         

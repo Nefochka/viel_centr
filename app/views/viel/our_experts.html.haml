@@ -5,9 +5,10 @@
   %hr    
     %h4.italic.black{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
     %br
+    %hr
   .container{:align => 'center'}
     %h3.black Массажисты:
-    %hr
+    %br
     .span3
       =image_tag('bychik.jpg',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Бычик Виолетта', :title => 'Бычик Виолетта')
     .span9
@@ -34,10 +35,11 @@
       %h4.black.strong Якубджанова София Рафиковна
       %p.black   дата рождения 18.07.1979, стаж работы 6 лет
       =link_to "Подробнее...", yakubjanova_viel_index_path
+  %hr
   %br
   .container{:align => 'center'}
     %h3.black Косметологи:
-    %hr
+    %br
     .span3
       =image_tag('zadorozhnaya.JPG',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Задорожная Вероника', :title => 'Задорожная Вероника')
 
@@ -55,6 +57,19 @@
       %h4.black.strong Храмцовская Капитолина Евгеньевна
       %p.black   дата рождения 10.03.1990, стаж работы 4 года 
       =link_to "Подробнее...", hramcovskaya_viel_index_path
+
+  %br
+  %hr
+  .container{:align => 'center'}
+    %h3.black Психолог:
+    %br
+    .span3
+      =image_tag('sharevich.jpg',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Шаревич Юлия', :title => 'Шаревич Юлия')
+
+    .span9
+      %h4.black.strong Шаревич Юлия Борисовна
+      %p.black дата рождения 03.07.1976, стаж работы 3 года  
+      =link_to "Подробнее...", sharevich_viel_index_path
  
     %br
   %br
