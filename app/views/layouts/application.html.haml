@@ -21,14 +21,14 @@
       VK.init({apiId: 4224369, onlyWidgets: true});
     
 
-  %body.background_viel4{:class => controller_name, :onload=>'ODKL.init()'}
+  %body.background_viel{:class => controller_name, :onload=>'ODKL.init()'}
     #fb-root
     .container
       .masthead
         %h3.OrangeRed
-          = link_to image_tag('logotyp_2.jpg',  :class => 'img-rounded', height: "77", width: "130"), root_url, data: {'no-turbolink' => true, :'font-family' => 'font_viel_emblema'}
+          = link_to image_tag('head1.jpg',  :class => 'img-rounded', height: "77", width: "670"), root_url, data: {'no-turbolink' => true, :'font-family' => 'font_viel_emblema'}
          
-          = link_to '"Виэль", центр красоты и здоровья', root_url, data: {'no-turbolink' => true, :'font-family' => 'font_viel_emblema', :align => 'center'}
+          //= link_to '"Виэль", центр красоты и здоровья', root_url, data: {'no-turbolink' => true, :'font-family' => 'font_viel_emblema', :align => 'center'}
 
           =link_to image_tag('sertificate.jpg',  :class => 'img-rounded', height: "77", width: "350", :align => 'right'), gift_certificate_viel_index_path
           .container{:align => 'right'}
