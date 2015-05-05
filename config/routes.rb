@@ -56,6 +56,7 @@ VielCentr::Application.routes.draw do
   get "viel/sharevich"
   get "viel/obuhovskij"
   get "viel/documents"
+  get "viel/vacancies"
 
   resources :orders
     get "orders/new"
@@ -94,6 +95,7 @@ VielCentr::Application.routes.draw do
     get :sharevich, :on => :collection
     get :obuhovskij, :on => :collection
     get :documents, :on => :collection
+    get :vacancies, :on => :collection
   end
 
 
