@@ -24,6 +24,11 @@
       %li{:class => set_active_if(:spa_etiquette, @menu_item)}
         =link_to 'SPA-этикет', spa_etiquette_viel_index_path, :class => 'button_viel'
 
+  .container
+    %ul_my.nav-pills.viel-pills
+      %li{:class => set_active_if(:documents, @menu_item)}
+        =link_to 'Документы', documents_viel_index_path, :class => 'button_viel'
+
       .container{:align => 'right'}
         - if current_user
           %li
