@@ -44,6 +44,7 @@ VielCentr::Application.routes.draw do
   get "viel/thai_massage"
   get "viel/manicure_pedicure"
   get "viel/psychologist"
+  get "viel/astrologer"
   get "viel/education"
   get "viel/about_us"
   get "viel/our_experts"
@@ -55,9 +56,11 @@ VielCentr::Application.routes.draw do
   get "viel/yakubjanova"
   get "viel/sharevich"
   get "viel/lupandina"
+  get "viel/svetlova"
   get "viel/obuhovskij"
   get "viel/documents"
   get "viel/vacancies"
+
 
   resources :orders
     get "orders/new"
@@ -72,6 +75,7 @@ VielCentr::Application.routes.draw do
     get :thai_massage, :on => :collection
     get :manicure_pedicure, :on => :collection
     get :psychologist, :on => :collection
+    get :astrologer, :on => :collection
     get :education, :on => :collection
 
     get :cosmetics, :on => :collection
@@ -95,6 +99,7 @@ VielCentr::Application.routes.draw do
     get :yakubjanova, :on => :collection
     get :sharevich, :on => :collection
     get :lupandina, :on => :collection
+    get :svetlova, :on => :collection
     get :obuhovskij, :on => :collection
     get :documents, :on => :collection
     get :vacancies, :on => :collection
