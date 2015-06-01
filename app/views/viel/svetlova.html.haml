@@ -1,0 +1,36 @@
+.masthead
+  .container_viel.OrangeRed{:align => 'center'}
+    %br
+    %br
+    %h2{:'font-family' => 'font-centr'} Наши специалисты
+  %hr    
+    %h4.italic.black{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
+    %br
+    %br
+    %br
+
+  .container_viel{:align => 'center'}
+    =image_tag('svetlova.jpg',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Светлова Милена', :title => 'Светлова Милена')
+    %h3.OrangeRed  Светлова Милена Валерьевна
+    %h4.black     Окончила Высшую Московскую школу Астрологии в 1996г. 
+    %h4.black дата рождения  30.12.1973
+    %h4.black стаж 
+
+    .accordion{:id=> 'accordion2'}
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseOne"} 
+            %h3.OrangeRed Сертификаты Светловой Милены Валерьевны
+        #collapseOne{:class => "accordion-body collapse in"}
+          .accordion-inner
+
+
+
+
+    %br
+
+
+
+  %br
+
+         
