@@ -58,8 +58,13 @@ VielCentr::Application.routes.draw do
   get "viel/lupandina"
   get "viel/svetlova"
   get "viel/obuhovskij"
+  get "viel/children"
   get "viel/documents"
   get "viel/vacancies"
+  get "viel/manipulation"
+  get "viel/medical_gymnastics"
+  get "viel/fizio_procedures"
+  get "viel/permanent_cosmetics"
 
 
   resources :orders
@@ -101,8 +106,13 @@ VielCentr::Application.routes.draw do
     get :lupandina, :on => :collection
     get :svetlova, :on => :collection
     get :obuhovskij, :on => :collection
+    get :children, :on => :collection
     get :documents, :on => :collection
     get :vacancies, :on => :collection
+    get :manipulation, :on => :collection
+    get :medical_gymnastics, :on => :collection
+    get :fizio_procedures, :on => :collection
+    get :permanent_cosmetics, :on => :collection
   end
 
 

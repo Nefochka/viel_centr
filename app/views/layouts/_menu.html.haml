@@ -26,6 +26,8 @@
 
   .container
     %ul_my.nav-pills.viel-pills
+      %li{:class => set_active_if(:children, @menu_item)}
+        =link_to 'ДЛЯ ДЕТЕЙ', children_viel_index_path, :class => 'button_learn'
       %li{:class => set_active_if(:documents, @menu_item)}
         =link_to 'Документы', documents_viel_index_path, :class => 'button_viel'
       %li{:class => set_active_if(:vacancies, @menu_item)}

@@ -4,8 +4,24 @@
       %li{:class => set_active_if(:massage, @side_menu_item)}
         =link_to 'Лечебный массаж', massage_viel_index_path, :class => 'button_viel_menu'
       %br
+      %li{:class => set_active_if(:manipulation, @side_menu_item)}
+        =link_to 'Мануальный терапевт', manipulation_viel_index_path, :class => 'button_viel_menu'
+      %br
+      %li{:class => set_active_if(:medical_gymnastics, @side_menu_item)}
+        =link_to 'ЛФК', medical_gymnastics_viel_index_path, :class => 'button_viel_menu'
+      %br
+      %li{:class => set_active_if(:fizio_procedures, @side_menu_item)}
+        =link_to 'Физиопроцедуры', fizio_procedures_viel_index_path, :class => 'button_viel_menu'
+      %br
       %li{:class => set_active_if(:cosmetology, @side_menu_item)}
         =link_to 'Косметология', cosmetology_viel_index_path, :class => 'button_viel_menu'
+      %br
+      %li{:class => set_active_if(:permanent_cosmetics, @side_menu_item)}
+        =link_to 'Тату, татуаж', permanent_cosmetics_viel_index_path, :class => 'button_viel_menu'
+      %br
+      %li{:class => set_active_if(:spa_procedures, @side_menu_item)}
+        =link_to 'SPA - процедуры', spa_procedures_viel_index_path, :class => 'button_viel_menu'
+
       %br
       %li{:class => set_active_if(:spa_procedures, @side_menu_item)}
         =link_to 'SPA-программы', spa_procedures_viel_index_path, :class => 'button_viel_menu'
@@ -17,7 +33,7 @@
         =link_to 'Пиллинги', peelings_viel_index_path, :class => 'button_viel_menu'
       %br
       %li{:class => set_active_if(:thai_massage, @side_menu_item)}
-        =link_to 'Тайский массаж', thai_massage_viel_index_path, :class => 'button_viel_menu'
+        =link_to 'Тайский лечебный массаж', thai_massage_viel_index_path, :class => 'button_viel_menu'
       %br
       %li{:class => set_active_if(:manicure_pedicure, @side_menu_item)}
         =link_to 'Маникюр, педикюр', manicure_pedicure_viel_index_path, :class => 'button_viel_menu'
@@ -32,7 +48,11 @@
       %li{:class => set_active_if(:education, @side_menu_item)}
         =link_to 'ОБУЧЕНИЕ', education_viel_index_path, :class => 'button_learn'
       %br
- 
+
+      =image_tag('banner3.jpg',  :class => 'img-rounded', height: "77", width: "210", :align => 'left')
+
+      %br
+
       =image_tag('banner2.jpg',  :class => 'img-rounded', height: "77", width: "210", :align => 'left')
  
   .span2.offset7{:align => 'left'}
