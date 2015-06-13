@@ -117,6 +117,18 @@ body {
   color:OrangeRed;
 }
 
+.Beige{
+  color:OrangeRed;
+}
+
+.gold{
+  color:#FFD700;
+}
+
+.oliveDrab{
+  color: #C0FF3E;
+}
+
 .strong_my {
   font-style: bold;
 }
@@ -201,6 +213,33 @@ p.font_viel_centr{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.background_viel2_1 {
+    margin: 0 auto; 
+    padding: 0px;
+    background-image: asset-url('');
+    background-color: #FFDEAD;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background_viel2 {
+    margin: 0 auto; 
+    padding: 0px;
+    background: #FFDEAD;
+background: #FFDEAD; /* Old browsers */
+background: -moz-linear-gradient(top, #FFDEAD 0%, #FFDEAD 50%, #FFDEAD 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFDEAD), color-stop(50%,#FFDEAD), color-stop(100%,#FFDEAD)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #FFDEAD 0%,#FFDEAD 50%,#FFDEAD 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #FFDEAD 0%,#FFDEAD 50%,#FFDEAD 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #FFDEAD 0%,#FFDEAD 50%,#FFDEAD 100%); /* IE10+ */
+background: linear-gradient(to bottom, #FFDEAD 0%,#FFDEAD 50%,#FFDEAD 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFDEAD', endColorstr='#FFDEAD',GradientType=0 ); /* IE6-9 */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .background_viel3 {
     margin: 0 auto; 
@@ -378,7 +417,7 @@ ol_my {
   float: right;
 }
 
-.button_learn {
+.button_learn_old {
    border-top: 1px solid #e8d615;
    background: #f0822d;
    background: -webkit-gradient(linear, left top, left bottom, from(#e67512), to(#f0822d));
@@ -403,6 +442,31 @@ ol_my {
    vertical-align: middle;
 }
 
+.button_learn {
+   border-top: 1px solid #e8d615;
+   background: #f0822d;
+   background: -webkit-gradient(linear, left top, left bottom, from(OrangeRed), to(gold));
+   background: -webkit-linear-gradient(top, OrangeRed, gold);
+   background: -moz-linear-gradient(top, OrangeRed, gold);
+   background: -ms-linear-gradient(top, OrangeRed, gold);
+   background: -o-linear-gradient(top, OrangeRed, gold);
+   *background: transparent url('logotyp_black.jpg') no-repeat scroll top right ;
+   padding: 11px 22px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   border-radius: 9px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: black;
+   font-size: 20px;
+   font-family: font_viel_emblema, font_viel_centr;
+   font-style: italic;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
 .button_learn:hover {
    border-top-color: #28597a;
    background: white;
@@ -414,7 +478,7 @@ ol_my {
    background: #86a5ba;
 }
 
-.button_viel {
+.button_viel_old {
    border-top: 1px solid #e8d615;
    background: #f0822d;
    background: -webkit-gradient(linear, left top, left bottom, from(#e67512), to(#f0822d));
@@ -437,6 +501,29 @@ ol_my {
    vertical-align: middle;
 }
 
+.button_viel {
+   border-top: 1px solid #e8d615;
+   background: #f0822d;
+   background: -webkit-gradient(linear, left top, left bottom, from(orange), to(yellow));
+   background: -webkit-linear-gradient(top, orange, yellow);
+   background: -moz-linear-gradient(top, orange, yellow);
+   background: -ms-linear-gradient(top, orange, yellow);
+   background: -o-linear-gradient(top, orange, yellow);
+   padding: 11px 22px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   border-radius: 9px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: black;
+   font-size: 14px;
+   font-family: font_viel_emblema, font_viel_centr, Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
 .button_viel:hover {
    border-top-color: #28597a;
    background: orange;
@@ -448,7 +535,7 @@ ol_my {
    background: #86a5ba;
 }
 
-.button_viel_menu {
+.button_viel_menu_old {
    border-top: 1px solid #e8d615;
    background: #f0822d;
    background: -webkit-gradient(linear, left top, left bottom, from(#e67512), to(#f0822d));
@@ -465,6 +552,30 @@ ol_my {
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
+   font-size: 16px;
+   font-family: font_viel_emblema, font_viel_centr, Georgia, Serif;
+   font-style: italic;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.button_viel_menu {
+   border-top: 1px solid #e8d615;
+   background: #f0822d;
+   background: -webkit-gradient(linear, left top, left bottom, from(orange), to(yellow));
+   background: -webkit-linear-gradient(top, orange, yellow);
+   background: -moz-linear-gradient(top, orange, yellow);
+   background: -ms-linear-gradient(top, orange, yellow);
+   background: -o-linear-gradient(top, orange, yellow);
+   padding: 11px 22px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   border-radius: 9px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: black;
    font-size: 16px;
    font-family: font_viel_emblema, font_viel_centr, Georgia, Serif;
    font-style: italic;

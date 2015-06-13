@@ -41,6 +41,9 @@
       %li{:class => set_active_if(:manicure_pedicure, @side_menu_item)}
         =link_to 'Маникюр, педикюр', manicure_pedicure_viel_index_path, :class => 'button_viel_menu'
       %br
+      %li{:class => set_active_if(:make_up, @side_menu_item)}
+        =link_to 'Визаж', make_up_viel_index_path, :class => 'button_viel_menu'
+      %br
       %li{:class => set_active_if(:psychologist, @side_menu_item)}
         =link_to 'Психолог', psychologist_viel_index_path, :class => 'button_viel_menu'
       %br
