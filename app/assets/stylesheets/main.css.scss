@@ -118,7 +118,7 @@ body {
 }
 
 .Beige{
-  color:OrangeRed;
+  color:Beige;
 }
 
 .gold{
@@ -127,6 +127,10 @@ body {
 
 .oliveDrab{
   color: #C0FF3E;
+}
+
+.palegoldenrod{
+  color: #EEE8AA;
 }
 
 .strong_my {
@@ -218,7 +222,7 @@ p.font_viel_centr{
     margin: 0 auto; 
     padding: 0px;
     background-image: asset-url('');
-    background-color: #FFDEAD;
+    background-color: #EEE8AA;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -226,15 +230,15 @@ p.font_viel_centr{
 .background_viel2 {
     margin: 0 auto; 
     padding: 0px;
-    background: #FFDEAD;
-background: #FFDEAD; /* Old browsers */
-background: -moz-linear-gradient(top, #FFDEAD 0%, #FFDEAD 50%, #FFDEAD 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFDEAD), color-stop(50%,#FFDEAD), color-stop(100%,#FFDEAD)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #FFDEAD 0%,#FFDEAD 50%,#FFDEAD 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #FFDEAD 0%,#FFDEAD 50%,#FFDEAD 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #FFDEAD 0%,#FFDEAD 50%,#FFDEAD 100%); /* IE10+ */
-background: linear-gradient(to bottom, #FFDEAD 0%,#FFDEAD 50%,#FFDEAD 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFDEAD', endColorstr='#FFDEAD',GradientType=0 ); /* IE6-9 */
+    background: #EEE8AA;
+background: #EEE8AA; /* Old browsers */
+background: -moz-linear-gradient(top, #EEE8AA 0%, #EEE8AA 50%, #EEE8AA 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEE8AA), color-stop(50%,#EEE8AA), color-stop(100%,#EEE8AA)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #EEE8AA 0%,#EEE8AA 50%,#EEE8AA 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #EEE8AA 0%,#EEE8AA 50%,#EEE8AA 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #EEE8AA 0%,#EEE8AA 50%,#EEE8AA 100%); /* IE10+ */
+background: linear-gradient(to bottom, #EEE8AA 0%,#EEE8AA 50%,#EEE8AA 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEE8AA', endColorstr='#EEE8AA',GradientType=0 ); /* IE6-9 */
 
     background-repeat: no-repeat;
     background-size: cover;
