@@ -66,6 +66,7 @@ VielCentr::Application.routes.draw do
   get "viel/fizio_procedures"
   get "viel/permanent_cosmetics"
   get "viel/make_up"
+  get "viel/spa_programs"
 
 
   resources :orders
@@ -115,6 +116,7 @@ VielCentr::Application.routes.draw do
     get :fizio_procedures, :on => :collection
     get :permanent_cosmetics, :on => :collection
     get :make_up, :on => :collection
+    get :spa_programs, :on => :collection
   end
 
 
