@@ -67,6 +67,10 @@ VielCentr::Application.routes.draw do
   get "viel/permanent_cosmetics"
   get "viel/make_up"
   get "viel/spa_programs"
+  get "viel/useful_tips"
+  get "viel/useful_tips_1"
+  get "viel/useful_tips_2"
+  get "viel/useful_tips_3"
 
 
   resources :orders
@@ -117,6 +121,10 @@ VielCentr::Application.routes.draw do
     get :permanent_cosmetics, :on => :collection
     get :make_up, :on => :collection
     get :spa_programs, :on => :collection
+    get :useful_tips, :on => :collection
+    get :useful_tips_1, :on => :collection
+    get :useful_tips_2, :on => :collection
+    get :useful_tips_3, :on => :collection
   end
 
 

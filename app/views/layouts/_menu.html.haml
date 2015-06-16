@@ -30,6 +30,8 @@
         =link_to 'Документы', documents_viel_index_path, :class => 'button_viel'
       %li{:class => set_active_if(:vacancies, @menu_item)}
         =link_to 'Вакансии', vacancies_viel_index_path, :class => 'button_viel'
+      %li{:class => set_active_if(:useful_tips, @menu_item)}
+        =link_to 'Полезные советы', useful_tips_viel_index_path, :class => 'button_viel'
 
       .container{:align => 'right'}
         - if current_user
