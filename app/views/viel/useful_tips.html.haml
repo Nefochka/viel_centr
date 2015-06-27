@@ -2,31 +2,33 @@
   .container_viel2.OrangeRed{:align => 'center'}
   
     %h4.italic{:'font-family' => 'font-centr', :align => 'right'} 
-      .container_viel{:align => 'center'}
+      .row{:align => 'center'}
         %h2{:'font-family' => 'font-centr'} Полезные советы
         %hr 
         %br
         %br
-        =link_to image_tag('useful_tips1.jpg',  :class => 'img-rounded', height: "77", width: "200", :align => 'center'), useful_tips_1_viel_index_path
-        %br
-          =link_to "Крем для загара с ППД защитой", useful_tips_1_viel_index_path
-        %br
-        %br
-        =link_to image_tag('useful_tips2.jpg',  :class => 'img-rounded', height: "77", width: "200", :align => 'center'), useful_tips_2_viel_index_path
-        %br
-          =link_to "Как выбрать солнцезащитный крем?", useful_tips_2_viel_index_path
-        %br
-        %br
-        =link_to image_tag('useful_tips3.jpg',  :class => 'img-rounded', height: "77", width: "200", :align => 'center'), useful_tips_3_viel_index_path
-        %br
-          =link_to "Сколько солнцезащитного крема нужно наносить?", useful_tips_3_viel_index_path
-        %br    
-        %br
-        =link_to image_tag('useful_tips4.jpg',  :class => 'img-rounded', height: "77", width: "200", :align => 'center'), useful_tips_4_viel_index_path
-        %br
-          =link_to "Способы защиты от солнечного облучения", useful_tips_4_viel_index_path
-        %br    
-        %br
+        .span3
+          =link_to image_tag('useful_tips1.jpg',  :class => 'img-rounded', height: "77", width: "200", :align => 'center'), useful_tips_1_viel_index_path
+          %br
+            =link_to "Крем для загара с ППД (PPD) защитой", useful_tips_1_viel_index_path
+          %br
+        
+          =link_to image_tag('useful_tips2.jpg',  :class => 'img-rounded', height: "77", width: "220", :align => 'center'), useful_tips_2_viel_index_path
+          %br
+            =link_to "Как выбрать солнцезащитный крем?", useful_tips_2_viel_index_path
+  
+          %br
+        .span3
+          =link_to image_tag('useful_tips4.jpg',  :class => 'img-rounded', height: "77", width: "220", :align => 'center'), useful_tips_4_viel_index_path
+          %br
+            =link_to "Способы защиты от солнечного облучения", useful_tips_4_viel_index_path
+          %br   
+
+          =link_to image_tag('useful_tips3.jpg',  :class => 'img-rounded', height: "77", width: "230", :align => 'center'), useful_tips_3_viel_index_path
+          %br
+            =link_to "Сколько солнцезащитного крема нужно наносить?", useful_tips_3_viel_index_path
+          %br    
+          %br
   %br
 
   .container{:align => 'center'}
