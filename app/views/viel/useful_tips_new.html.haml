@@ -5,16 +5,22 @@
       .container_viel{:align => 'center'}
         %h2{:'font-family' => 'font-centr'} Полезные советы
         %hr 
+
+        =link_to image_tag('useful_tips1.jpg',  :class => 'img-rounded', height: "77", width: "250", :align => 'left'), useful_tips_1_viel_index_path
+        =link_to image_tag('useful_tips2.jpg',  :class => 'img-rounded', height: "77", width: "320", :align => 'right'), useful_tips_2_viel_index_path
         %br
         %br
-        =link_to image_tag('useful_tips1.jpg',  :class => 'img-rounded', height: "77", width: "200", :align => 'center'), useful_tips_1_viel_index_path
         %br
+        %br
+        %br
+        %p{:align => 'left'}
           =link_to "Крем для загара с ППД защитой", useful_tips_1_viel_index_path
-        %br
-        %br
-        =link_to image_tag('useful_tips2.jpg',  :class => 'img-rounded', height: "77", width: "200", :align => 'center'), useful_tips_2_viel_index_path
-        %br
+        %p{:align => 'right'}
           =link_to "Как выбрать солнцезащитный крем?", useful_tips_2_viel_index_path
+
+
+        %br
+
         %br
         %br
         =link_to image_tag('useful_tips3.jpg',  :class => 'img-rounded', height: "77", width: "200", :align => 'center'), useful_tips_3_viel_index_path
