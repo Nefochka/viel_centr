@@ -1,139 +1,47 @@
 .masthead
 
 
-  .container-viel{:align => 'center'}
+  .container-viel2{:align => 'center'}
  
-    %h3.OrangeRed.strong
-      Центр Здоровья и Красоты «Виэль»  
 
-    %br
-    %h3.red.italic 
-      АКЦИИ!!!
- 
-    %table.fon_table{:cellpadding=> '5px 20px'}
+    %h4.italic{:'font-family' => 'font-centr', :align => 'right'} 
+      .row{:align => 'center'}
+        %h2.OrangeRed{:'font-family' => 'font-centr'} НАШИ НОВОСТИ!!!
+        %hr 
+        %br
+        %br
 
-      %tr
-        %td{:colspan=>"2", :align => 'center', :bgcolor=>'red'}
-          = image_tag('',  :class => 'img-rounded', height: "50", width: "400")
-
-
-      %tr
-        %td{:colspan=>"2", :align => 'center', :bgcolor=>'red'}
-          = image_tag('',  :class => 'img-rounded', height: "50", width: "400")
-      %tr  
-        %col{:width=>"150", :valign=>"top"}
-        %col{:width=>"600", :valign=>"top"}
-        %td
-          = image_tag('open_door.jpg',  :class => 'img-rounded', height: "200", width: "400")        
-        %td.h2.red.italic.strong{:align => 'center'}
+          =link_to image_tag('open_door.jpg',  :class => 'img-rounded', height: "77", width: "250", :align => 'center'), banner_1_viel_index_path
           %br
-          ДЕНЬ ОТКРЫТЫХ ДВЕРЕЙ! 
-          %br
-          Только 16 ИЮЛЯ !!!
+            =link_to "ДЕНЬ ОТКРЫТЫХ ДВЕРЕЙ!", banner_1_viel_index_path
           %br
 
-      %tr
+        %h2.OrangeRed{:'font-family' => 'font-centr'} НАШИ АКЦИИ!!!
+        %hr 
+        %br
+        .span4        
+          =link_to image_tag('learn1.jpg',  :class => 'img-rounded', height: "77", width: "220", :align => 'center'), action_1_viel_index_path
+          %br
+            =link_to "ОБУЧЕНИЕ!!!", action_1_viel_index_path
+          %br
+          %br
+          =link_to image_tag('friends.jpg',  :class => 'img-rounded', height: "77", width: "230", :align => 'center'), action_2_viel_index_path
+          %br
+            =link_to "Приведи друга и получи...!!!", action_2_viel_index_path
+          %br    
 
-        %td.black{:colspan=>"2", :align => 'center'}
+  
+          %br
+        .span4
+          =link_to image_tag('action3.jpeg',  :class => 'img-rounded', height: "77", width: "220", :align => 'center'), action_3_viel_index_path
+          %br
+            =link_to "У Вас День Рождения?", action_3_viel_index_path
+          %br   
 
-              
+          =link_to image_tag('action3.jpeg',  :class => 'img-rounded', height: "77", width: "220", :align => 'center'), action_4_viel_index_path
           %br
-            Спешите, запись предварительная по телефону 8-938-429-23-28
- 
-      %tr
-        %td{:colspan=>"2", :align => 'center', :bgcolor=>'red'}
-          = image_tag('',  :class => 'img-rounded', height: "50", width: "400")
-      %tr
-        %td
-          = image_tag('action3.jpeg',  :class => 'img-rounded', height: "100", width: "150")
-        %td.h2.red.italic.strong{:align => 'center'}
+            =link_to "Мы дарим Вам подарки!", action_4_viel_index_path
           %br
-          ОБУЧЕНИЕ!!!
-          %br
-
-      %tr
-
-        %td.black{:colspan=>"2", :align => 'center'}
-
-          %br
-            Обучение проводит Призер VII Чемпионата России по массажу 2013г., Член жюри VIII Чемпионата России по массажу "Лучший СПА мастер 2014г." Бычик Виолетта Вячеславовна.
-          %br
-            Спешите! Количество мест ограничено!
-          %br
-            Запись по телефону 8-938-429-23-28
-          %br
-            P.S. По окончанию обучения выдается сертификат!
-
-      %tr
-        %td{:colspan=>"2", :align => 'center', :bgcolor=>'red'}
-          = image_tag('',  :class => 'img-rounded', height: "50", width: "400")
-      %tr
-        %td
-          = image_tag('action3.jpeg',  :class => 'img-rounded', height: "100", width: "150")  
-        %td.h2.red.italic.strong{:align => 'center'} 
-          Мы дарим Вам подарки!
-      %tr   
-        %td.black{:colspan=>"2", :align => 'center'}
-          При покупке курса массажа или  подарочного сертификата стоимостью 10 000 рублей, выгодная дисконтная карта
-          %br
-          «Мой Город» Вам в ПОДАРОК!!!
-          %br
-          Торопитесь, количество карт ограничено!
-          %br
-            Мы Вас любим!!!
-
-
-      %tr
-        %td{:colspan=>"2", :align => 'center', :bgcolor=>'red'}
-          = image_tag('',  :class => 'img-rounded', height: "50", width: "400")
-      %tr
-        %td
-          = image_tag('action3.jpeg',  :class => 'img-rounded', height: "100", width: "150") 
-        %td.h2.red.italic.strong{:align => 'center'} 
-          У Вас День Рождения?
-      %tr   
-        %td.black{:colspan=>"2", :align => 'center'}
-          Мы дарим Вам скидку 10% на все наши услуги в этот день и два дня после него!
-
-
-
-      %tr
-        %td{:colspan=>"2", :align => 'center', :bgcolor=>'red'}
-          = image_tag('',  :class => 'img-rounded', height: "50", width: "400")
-      %tr
-        %td
-          = image_tag('friends.jpg',  :class => 'img-rounded', height: "100", width: "150")
-        %td.h2.red.italic.strong{:align => 'center'} 
-          Приведи друга и получи...!!!
-      %tr
-        %td.black{:colspan=>"2", :align => 'center'}
-          Массаж:
-          %br
-            1 человека – массаж головы/стоп/шейно-воротниковой зоны
-          %br
-            3 человека – массаж спины
-          %br
-            5 человек – общий массаж тела
-          %br
-          Косметология:
-          %br
-            1 человека – коррекция/окрашивание бровей
-          %br
-            3 человека – депиляция рук/ноги до колена/подмышечная область
-          %br
-            5 человек – массаж лица
-          %br
-          Маникюр:
-          %br
-            1 человека – массаж, скрабирование кистей рук
-          %br
-            3 человека – маникюр без покрытия
-          %br
-            5 человек – педикюр без покрытия
-      %tr
-        %td{:colspan=>"2", :align => 'center', :bgcolor=>'red'}
-          = image_tag('',  :class => 'img-rounded', height: "50", width: "400")
-
   %br
   %br  
   %br

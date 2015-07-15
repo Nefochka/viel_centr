@@ -72,6 +72,11 @@ VielCentr::Application.routes.draw do
   get "viel/useful_tips_2"
   get "viel/useful_tips_3"
   get "viel/useful_tips_4"
+  get "viel/action_1"
+  get "viel/action_2"
+  get "viel/action_3"
+  get "viel/action_4"
+  get "viel/banner_1"
 
   resources :orders
     get "orders/new"
@@ -126,6 +131,11 @@ VielCentr::Application.routes.draw do
     get :useful_tips_2, :on => :collection
     get :useful_tips_3, :on => :collection
     get :useful_tips_4, :on => :collection
+    get :action_1, :on => :collection
+    get :action_2, :on => :collection
+    get :action_3, :on => :collection
+    get :action_4, :on => :collection
+    get :banner_1, :on => :collection
   end
 
 
