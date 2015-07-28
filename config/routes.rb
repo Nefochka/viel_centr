@@ -51,6 +51,7 @@ VielCentr::Application.routes.draw do
   get "viel/spa_etiquette"
   get "viel/bychik"
   get "viel/zadorozhnaya"
+  get "viel/rudenko"
   get "viel/mbutuka"
   get "viel/hramcovskaya"
   get "viel/yakubjanova"
@@ -110,6 +111,7 @@ VielCentr::Application.routes.draw do
     get :spa_etiquette, :on => :collection
     get :bychik, :on => :collection
     get :zadorozhnaya, :on => :collection
+    get :rudenko, :on => :collection
     get :mbutuka, :on => :collection
     get :hramcovskaya, :on => :collection
     get :yakubjanova, :on => :collection
