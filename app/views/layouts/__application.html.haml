@@ -4,21 +4,20 @@
     %meta{:charset => "utf-8"}
     %meta{:property => "og:*", :content => "..."}
 
-
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-
     %meta{:name => "author", :content => ""}
     %meta{:name=>"google-site-verification", :content=>"_gzYyKL1UKQhkHlYNPFfeRw89jJYx89meWwwGKrKCd4"}
-
 
     = stylesheet_link_tag 'application', :media => 'all', :"data-turbolinks-eval" => false
     = javascript_include_tag 'application', :"data-turbolinks-eval" => false
     = csrf_meta_tags
     = render :partial => 'layouts/simplebox'
 
+ 
     %script{src: "//vk.com/js/api/openapi.js?105", type: "text/javascript"}
     :javascript
       VK.init({apiId: 4224369, onlyWidgets: true});
+
     
 
   %body.background_viel2_1{:class => controller_name, :onload=>'ODKL.init()'}
