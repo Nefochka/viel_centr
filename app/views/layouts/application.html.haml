@@ -13,9 +13,11 @@
     = csrf_meta_tags
     = render :partial => 'layouts/simplebox'
 
+ 
     %script{src: "//vk.com/js/api/openapi.js?105", type: "text/javascript"}
     :javascript
       VK.init({apiId: 4224369, onlyWidgets: true});
+
     
 
   %body.background_viel2_1{:class => controller_name, :onload=>'ODKL.init()'}
