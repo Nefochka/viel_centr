@@ -1,0 +1,35 @@
+.masthead
+  .container_viel.OrangeRed{:align => 'center'}
+    %br
+    %br
+    %h2{:'font-family' => 'font-centr'} Наши специалисты
+  %hr    
+    %h4.italic.black{:'font-family' => 'font-centr', :align => 'right'} "Цель коллектива центра здоровья и красоты  «Виэль» — тесное сотрудничество с клиентами в доброжелательной и доверительной атмосфере. Сочетание демократических цен, качества, внимательное отношение ко Всем посетителям сделают приятным и комфортным прибывание в нашем центре."
+    %br
+    %br
+    %br
+
+  .container_viel{:align => 'center'}
+    =image_tag('sidenko.jpg',  :class => 'img-rounded', height: "100", width: "230", :alt => 'Сиденко Вера', :title => 'Сиденко Вера')
+    %h3.OrangeRed Сиденко Вера Борисовна
+    %h4.black дата рождения 30.10.1971
+    %h4.black стаж 10 лет
+
+    .accordion{:id=> 'accordion2'}
+      .accordion-group
+        .accordion-heading
+          %a{:class => "accordion-toggle", :'data-toggle' => "collapse", :'data-parent' => "#accordion2", :href => "#collapseOne"} 
+            %h3.OrangeRed Сертификаты Сиденко Веры Борисовны
+        #collapseOne{:class => "accordion-body collapse in"}
+          .accordion-inner
+
+            = image_tag('',  :class => 'class_large_my_2', height: "100", width: "300")
+            = image_tag('',  :class => 'class_large_my_2', height: "100", width: "156")
+
+
+
+
+
+  %br
+
+         

@@ -56,6 +56,7 @@ VielCentr::Application.routes.draw do
   get "viel/hramcovskaya"
   get "viel/yakubjanova"
   get "viel/sharevich"
+  get "viel/sidenko"
   get "viel/lupandina"
   get "viel/svetlova"
   get "viel/obuhovskij"
@@ -116,6 +117,7 @@ VielCentr::Application.routes.draw do
     get :hramcovskaya, :on => :collection
     get :yakubjanova, :on => :collection
     get :sharevich, :on => :collection
+    get :sidenko, :on => :collection
     get :lupandina, :on => :collection
     get :svetlova, :on => :collection
     get :obuhovskij, :on => :collection

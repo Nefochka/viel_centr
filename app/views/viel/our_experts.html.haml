@@ -80,15 +80,28 @@
   %br
   %hr
   .container{:align => 'center'}
-    %h3.black Психолог:
+    %h3.black Психологи:
     %br
     .span3
       =image_tag('sharevich.jpg',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Шаревич Юлия', :title => 'Шаревич Юлия')
 
     .span9
       %h4.black.strong Шаревич Юлия Борисовна
+      %p.black (детский психолог)
       %p.black дата рождения 03.07.1976, стаж работы 3 года  
       =link_to "Подробнее...", sharevich_viel_index_path
+
+  .container{:align => 'center'}
+    %br
+    %br
+    .span3
+      =image_tag('sidenko.jpg',  :class => 'img-rounded', height: "100", width: "175", :alt => 'Сиденко Вера', :title => 'Сиденко Вера')
+    .span9
+      %h4.black.strong Сиденко Вера Борисовна
+      %p.black (взрослый, семейный психолог)
+      %p.black   дата рождения 30.10.1971г, стаж работы 10 лет
+      =link_to "Подробнее...", sidenko_viel_index_path
+
 
   %br
   %hr
